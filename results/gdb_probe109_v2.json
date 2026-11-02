@@ -1,0 +1,1101 @@
+{
+ "run": "gdb_probe109_v2",
+ "summary": {
+  "n": 109,
+  "pass": 13,
+  "godot": "4.6.3",
+  "minutes": 322.2
+ },
+ "rows": [
+  {
+   "task": "task_0005",
+   "pass": false,
+   "turns": 8,
+   "runs": 2,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "ControlPanelRect should use the neutral grey tone from the tutorial"
+  },
+  {
+   "task": "task_0006",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 3,
+   "test_ok": null,
+   "msg": "UnitAI.debug_label must reference FSMDebugLabel"
+  },
+  {
+   "task": "task_0008",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 4,
+   "test_ok": false,
+   "msg": "StatsUI scene must have a script attached"
+  },
+  {
+   "task": "task_0017",
+   "pass": false,
+   "turns": 6,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Hand_R_IK must enable magnet"
+  },
+  {
+   "task": "task_0019",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 3,
+   "test_ok": null,
+   "msg": "MuzzleFlashEffect must use generic_effect_handler.gd"
+  },
+  {
+   "task": "task_0020",
+   "pass": false,
+   "turns": 14,
+   "runs": 1,
+   "finished": false,
+   "tests": 8,
+   "test_ok": false,
+   "msg": "no marker: TIMEOUT"
+  },
+  {
+   "task": "task_0032",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "SmokeEmitter node missing"
+  },
+  {
+   "task": "task_0033",
+   "pass": false,
+   "turns": 19,
+   "runs": 5,
+   "finished": false,
+   "tests": 8,
+   "test_ok": false,
+   "msg": "ArcingChunks must use a StandardMaterial3D override"
+  },
+  {
+   "task": "task_0036",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 8,
+   "test_ok": null,
+   "msg": "Setting trait_data should update TraitLabel text"
+  },
+  {
+   "task": "task_0038",
+   "pass": false,
+   "turns": 2,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Rain should emit at least 800 particles"
+  },
+  {
+   "task": "task_0039",
+   "pass": false,
+   "turns": 15,
+   "runs": 3,
+   "finished": true,
+   "tests": 6,
+   "test_ok": true,
+   "msg": "Smoke needs +-30 directional sway via directional velocity settings"
+  },
+  {
+   "task": "task_0043",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": true,
+   "tests": 12,
+   "test_ok": true,
+   "msg": "VBoxContainer for dialogue text missing inside HBoxContainer"
+  },
+  {
+   "task": "task_0044",
+   "pass": true,
+   "turns": 16,
+   "runs": 2,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Inventory buttons add and clear slot data"
+  },
+  {
+   "task": "task_0046",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "Main scene not instanced in test.tscn"
+  },
+  {
+   "task": "task_0056",
+   "pass": false,
+   "turns": 16,
+   "runs": 4,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Sweep.fill_mode must be Counter Clockwise"
+  },
+  {
+   "task": "task_0058",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 7,
+   "test_ok": false,
+   "msg": "Margins should be 20 on all sides"
+  },
+  {
+   "task": "task_0059",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 11,
+   "test_ok": false,
+   "msg": "Grid stretch_mode must be Tile"
+  },
+  {
+   "task": "task_0063",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 10,
+   "test_ok": null,
+   "msg": "HUD CanvasLayer not found"
+  },
+  {
+   "task": "task_0065",
+   "pass": false,
+   "turns": 7,
+   "runs": 2,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "Health/Score labels missing"
+  },
+  {
+   "task": "task_0085",
+   "pass": false,
+   "turns": 15,
+   "runs": 2,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Action 'freefly' is not bound to its expected key"
+  },
+  {
+   "task": "task_0093",
+   "pass": false,
+   "turns": 20,
+   "runs": 8,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "battle_over_panel.tscn failed to load"
+  },
+  {
+   "task": "task_0094",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "Main node not found"
+  },
+  {
+   "task": "task_0099",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 6,
+   "test_ok": false,
+   "msg": "UI anchors/offsets not configured"
+  },
+  {
+   "task": "task_0114",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 3,
+   "test_ok": null,
+   "msg": "Main scene not found"
+  },
+  {
+   "task": "task_0116",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Missing res://scenes/main.tscn"
+  },
+  {
+   "task": "task_0117",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Main must contain a GPUParticles2D named Rain"
+  },
+  {
+   "task": "task_0126",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 3,
+   "test_ok": null,
+   "msg": "UI node not found"
+  },
+  {
+   "task": "task_0128",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 1,
+   "test_ok": false,
+   "msg": "Panel material must be materials/julia.material"
+  },
+  {
+   "task": "task_0133",
+   "pass": false,
+   "turns": 9,
+   "runs": 2,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "ControlPanelRect should reserve at least 58px height"
+  },
+  {
+   "task": "task_0134",
+   "pass": true,
+   "turns": 6,
+   "runs": 1,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: bottom preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0135",
+   "pass": true,
+   "turns": 17,
+   "runs": 4,
+   "finished": true,
+   "tests": 7,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: bottom preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0136",
+   "pass": true,
+   "turns": 7,
+   "runs": 2,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: bottom preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0137",
+   "pass": true,
+   "turns": 15,
+   "runs": 3,
+   "finished": true,
+   "tests": 9,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: bottom preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0138",
+   "pass": false,
+   "turns": 4,
+   "runs": 1,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "AlertDialog should keep the Center preset growth behavior"
+  },
+  {
+   "task": "task_0139",
+   "pass": false,
+   "turns": 10,
+   "runs": 2,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "DangerDialog should keep the Center preset growth behavior"
+  },
+  {
+   "task": "task_0140",
+   "pass": false,
+   "turns": 9,
+   "runs": 1,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "WarningDialog should keep the Center preset growth behavior"
+  },
+  {
+   "task": "task_0141",
+   "pass": true,
+   "turns": 9,
+   "runs": 1,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: top preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0142",
+   "pass": false,
+   "turns": 4,
+   "runs": 1,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "HeaderBar should keep the Top Wide preset growth behavior"
+  },
+  {
+   "task": "task_0143",
+   "pass": false,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 15,
+   "test_ok": true,
+   "msg": "StatusHeader should keep the Top Wide preset growth behavior"
+  },
+  {
+   "task": "task_0144",
+   "pass": true,
+   "turns": 8,
+   "runs": 1,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: left preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0145",
+   "pass": true,
+   "turns": 7,
+   "runs": 1,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: left preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0146",
+   "pass": false,
+   "turns": 10,
+   "runs": 2,
+   "finished": true,
+   "tests": 6,
+   "test_ok": true,
+   "msg": "StatusRail should keep the Left Wide preset growth behavior"
+  },
+  {
+   "task": "task_0147",
+   "pass": true,
+   "turns": 5,
+   "runs": 1,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: right preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0148",
+   "pass": true,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 5,
+   "test_ok": null,
+   "msg": "VALIDATION_PASSED: right preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0149",
+   "pass": true,
+   "turns": 5,
+   "runs": 1,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: right preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0150",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "BattleOverPanel process_mode must be Always"
+  },
+  {
+   "task": "task_0151",
+   "pass": false,
+   "turns": 20,
+   "runs": 8,
+   "finished": false,
+   "tests": 1,
+   "test_ok": null,
+   "msg": "ContinueButton size_flags_horizontal must be Expand Fill"
+  },
+  {
+   "task": "task_0152",
+   "pass": false,
+   "turns": 18,
+   "runs": 4,
+   "finished": true,
+   "tests": 8,
+   "test_ok": true,
+   "msg": "ContinueButton size_flags_horizontal must be Fill"
+  },
+  {
+   "task": "task_0154",
+   "pass": false,
+   "turns": 20,
+   "runs": 8,
+   "finished": false,
+   "tests": 3,
+   "test_ok": false,
+   "msg": "ContinueButton size_flags_horizontal must be Fill"
+  },
+  {
+   "task": "task_0155",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": true,
+   "tests": 8,
+   "test_ok": true,
+   "msg": "ContinueButton size_flags_horizontal must be Expand"
+  },
+  {
+   "task": "task_0156",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 4,
+   "test_ok": null,
+   "msg": "ContinueButton size_flags_horizontal must be Shrink Begin"
+  },
+  {
+   "task": "task_0157",
+   "pass": false,
+   "turns": 20,
+   "runs": 8,
+   "finished": false,
+   "tests": 4,
+   "test_ok": false,
+   "msg": "ContinueButton size_flags_horizontal must be Shrink Begin"
+  },
+  {
+   "task": "task_0158",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 4,
+   "test_ok": false,
+   "msg": "ContinueButton size_flags_horizontal must be Expand"
+  },
+  {
+   "task": "task_0159",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 7,
+   "test_ok": false,
+   "msg": "ContinueButton size_flags_horizontal must be Expand"
+  },
+  {
+   "task": "task_0160",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "ContinueButton size_flags_horizontal must be Expand Fill"
+  },
+  {
+   "task": "task_0161",
+   "pass": false,
+   "turns": 16,
+   "runs": 6,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "ContinueButton size_flags_horizontal must be Expand Fill"
+  },
+  {
+   "task": "task_0162",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "ContinueButton size_flags_horizontal must be Shrink Begin"
+  },
+  {
+   "task": "task_0163",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 12,
+   "test_ok": null,
+   "msg": "ContinueButton size_flags_horizontal must be Shrink Begin"
+  },
+  {
+   "task": "task_0165",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "jumpkick animation must use the expected frame from the 7th row"
+  },
+  {
+   "task": "task_0171",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 2,
+   "test_ok": false,
+   "msg": "punch animation must use the first 3 valid frames from the 3rd row"
+  },
+  {
+   "task": "task_0192",
+   "pass": true,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 10,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Task completed successfully"
+  },
+  {
+   "task": "task_0193",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 5,
+   "test_ok": false,
+   "msg": "DustParticles texture must be star_particle.png"
+  },
+  {
+   "task": "task_0194",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 9,
+   "test_ok": true,
+   "msg": "DustParticles texture must be star_particle.png"
+  },
+  {
+   "task": "task_0195",
+   "pass": false,
+   "turns": 13,
+   "runs": 3,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "DustParticles position must be (320, 180)"
+  },
+  {
+   "task": "task_0196",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 3,
+   "test_ok": false,
+   "msg": "DustParticles GPUParticles2D missing"
+  },
+  {
+   "task": "task_0197",
+   "pass": false,
+   "turns": 13,
+   "runs": 3,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "DustParticles texture must be star_particle.png"
+  },
+  {
+   "task": "task_0198",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 9,
+   "test_ok": null,
+   "msg": "DustParticles texture must be star_particle.png"
+  },
+  {
+   "task": "task_0199",
+   "pass": true,
+   "turns": 9,
+   "runs": 2,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Task completed successfully"
+  },
+  {
+   "task": "task_0258",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "no marker: TIMEOUT"
+  },
+  {
+   "task": "task_0260",
+   "pass": false,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "game.tscn must instance the UI scene as UI"
+  },
+  {
+   "task": "task_0295",
+   "pass": false,
+   "turns": 14,
+   "runs": 5,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0296",
+   "pass": false,
+   "turns": 2,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Rain should emit at least 1200 particles"
+  },
+  {
+   "task": "task_0297",
+   "pass": false,
+   "turns": 9,
+   "runs": 3,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0298",
+   "pass": false,
+   "turns": 9,
+   "runs": 2,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0299",
+   "pass": false,
+   "turns": 2,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Rain should emit at least 500 particles"
+  },
+  {
+   "task": "task_0300",
+   "pass": false,
+   "turns": 10,
+   "runs": 3,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Rain emission box must span roughly 900 pixels to each side"
+  },
+  {
+   "task": "task_0301",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 12,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0302",
+   "pass": false,
+   "turns": 13,
+   "runs": 4,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0303",
+   "pass": false,
+   "turns": 11,
+   "runs": 5,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0304",
+   "pass": false,
+   "turns": 2,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Rain should emit at least 1100 particles"
+  },
+  {
+   "task": "task_0305",
+   "pass": false,
+   "turns": 2,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Rain should emit at least 550 particles"
+  },
+  {
+   "task": "task_0306",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 8,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0307",
+   "pass": false,
+   "turns": 10,
+   "runs": 3,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0308",
+   "pass": false,
+   "turns": 8,
+   "runs": 2,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0309",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 11,
+   "test_ok": false,
+   "msg": "Splash explosiveness should be 1.0 to fire bursts"
+  },
+  {
+   "task": "task_0310",
+   "pass": false,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 13,
+   "test_ok": false,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0311",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 12,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0312",
+   "pass": false,
+   "turns": 12,
+   "runs": 4,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Splash explosiveness should be 1.0 to fire bursts"
+  },
+  {
+   "task": "task_0313",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 11,
+   "test_ok": false,
+   "msg": "Rain sub_emitter must target the Splash node"
+  },
+  {
+   "task": "task_0314",
+   "pass": false,
+   "turns": 9,
+   "runs": 2,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Rain direction should be (0.08, 1.0, 0.0)"
+  },
+  {
+   "task": "task_0315",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 8,
+   "test_ok": false,
+   "msg": "Smoke trails should use 24 sections and 24 subdivisions for smooth ribbons"
+  },
+  {
+   "task": "task_0316",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 13,
+   "test_ok": false,
+   "msg": "Smoke needs -40 to 40 directional sway"
+  },
+  {
+   "task": "task_0317",
+   "pass": false,
+   "turns": 16,
+   "runs": 6,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Smoke needs -25 to 25 directional sway"
+  },
+  {
+   "task": "task_0318",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 13,
+   "test_ok": false,
+   "msg": "Last gradient color must fade to transparent"
+  },
+  {
+   "task": "task_0320",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 5,
+   "test_ok": false,
+   "msg": "Smoke direction must be (0.05,-1,0)"
+  },
+  {
+   "task": "task_0321",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 8,
+   "test_ok": true,
+   "msg": "Last gradient color must fade to transparent"
+  },
+  {
+   "task": "task_0322",
+   "pass": false,
+   "turns": 14,
+   "runs": 4,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Smoke needs -8 to 8 directional sway"
+  },
+  {
+   "task": "task_0323",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 13,
+   "test_ok": true,
+   "msg": "Smoke direction must be (0.15,-1,0)"
+  },
+  {
+   "task": "task_0324",
+   "pass": false,
+   "turns": 11,
+   "runs": 3,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Smoke needs -20 to 20 directional sway"
+  },
+  {
+   "task": "task_0325",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "Smoke needs -25 to 25 directional sway"
+  },
+  {
+   "task": "task_0326",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 10,
+   "test_ok": true,
+   "msg": "Smoke needs -18 to 18 directional sway"
+  },
+  {
+   "task": "task_0327",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "Missing res://scenes/main.tscn"
+  },
+  {
+   "task": "task_0328",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Smoke needs -15 to 15 directional sway"
+  },
+  {
+   "task": "task_0329",
+   "pass": false,
+   "turns": 17,
+   "runs": 5,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "Smoke needs -12 to 12 directional sway"
+  },
+  {
+   "task": "task_0330",
+   "pass": false,
+   "turns": 20,
+   "runs": 9,
+   "finished": false,
+   "tests": 1,
+   "test_ok": false,
+   "msg": "Smoke needs -20 to 20 directional sway"
+  },
+  {
+   "task": "task_0331",
+   "pass": false,
+   "turns": 19,
+   "runs": 5,
+   "finished": true,
+   "tests": 8,
+   "test_ok": true,
+   "msg": "Smoke needs -30 to 30 directional sway"
+  },
+  {
+   "task": "task_0332",
+   "pass": false,
+   "turns": 13,
+   "runs": 3,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "Smoke needs -25 to 25 directional sway"
+  },
+  {
+   "task": "task_0333",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 13,
+   "test_ok": false,
+   "msg": "Last gradient color must fade to transparent"
+  },
+  {
+   "task": "task_0334",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 9,
+   "test_ok": true,
+   "msg": "Smoke needs -35 to 35 directional sway"
+  }
+ ]
+}

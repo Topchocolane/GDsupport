@@ -1,0 +1,3301 @@
+{
+ "run": "gdb_s1_v2",
+ "summary": {
+  "n": 329,
+  "pass": 41,
+  "godot": "4.6.3",
+  "minutes": 935.3
+ },
+ "rows": [
+  {
+   "task": "task_0002",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 11,
+   "test_ok": false,
+   "msg": "Projectile must react to enemies inside _on_area_entered"
+  },
+  {
+   "task": "task_0003",
+   "pass": false,
+   "turns": 12,
+   "runs": 3,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "'explode' first frame must come from smoke sheet region (0,128,64,64)"
+  },
+  {
+   "task": "task_0004",
+   "pass": true,
+   "turns": 10,
+   "runs": 3,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Missile projectile scene matches tutorial structure"
+  },
+  {
+   "task": "task_0005",
+   "pass": false,
+   "turns": 11,
+   "runs": 3,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "PowerMeter should be centered (anchor_left/right = 0.5)"
+  },
+  {
+   "task": "task_0006",
+   "pass": true,
+   "turns": 18,
+   "runs": 4,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: UnitAI debug label wiring matches tutorial requirements"
+  },
+  {
+   "task": "task_0007",
+   "pass": true,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 15,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: CardPile resource behaves as expected"
+  },
+  {
+   "task": "task_0008",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 4,
+   "test_ok": null,
+   "msg": "Block image must use tile_0102 texture"
+  },
+  {
+   "task": "task_0009",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "AnimationPlayer must autoplay UnsafeCycle"
+  },
+  {
+   "task": "task_0010",
+   "pass": true,
+   "turns": 8,
+   "runs": 1,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Pickup collectible scene and script completed"
+  },
+  {
+   "task": "task_0011",
+   "pass": false,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 12,
+   "test_ok": false,
+   "msg": "Connect area_entered to _on_area_entered"
+  },
+  {
+   "task": "task_0012",
+   "pass": true,
+   "turns": 14,
+   "runs": 2,
+   "finished": true,
+   "tests": 8,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Bullet script moves forward and cleans up after collisions"
+  },
+  {
+   "task": "task_0013",
+   "pass": true,
+   "turns": 16,
+   "runs": 2,
+   "finished": true,
+   "tests": 9,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: FSM foundations implemented"
+  },
+  {
+   "task": "task_0014",
+   "pass": false,
+   "turns": 20,
+   "runs": 8,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "Background mode must be SKY"
+  },
+  {
+   "task": "task_0015",
+   "pass": true,
+   "turns": 7,
+   "runs": 1,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Fog and LUT configuration complete"
+  },
+  {
+   "task": "task_0016",
+   "pass": true,
+   "turns": 8,
+   "runs": 1,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Chest marker exposes a high-priority FlashlightPoint"
+  },
+  {
+   "task": "task_0017",
+   "pass": false,
+   "turns": 18,
+   "runs": 3,
+   "finished": false,
+   "tests": 9,
+   "test_ok": true,
+   "msg": "Hand_R_IK must enable magnet"
+  },
+  {
+   "task": "task_0018",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": true,
+   "tests": 14,
+   "test_ok": true,
+   "msg": "RayCast3D missing under BarrelEnd"
+  },
+  {
+   "task": "task_0019",
+   "pass": false,
+   "turns": 17,
+   "runs": 6,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "SmokeParticles must render with a mesh draw pass"
+  },
+  {
+   "task": "task_0020",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "Menus root must process while paused"
+  },
+  {
+   "task": "task_0021",
+   "pass": false,
+   "turns": 19,
+   "runs": 4,
+   "finished": true,
+   "tests": 7,
+   "test_ok": true,
+   "msg": "LevelCamera rotation must match tutorial orientation"
+  },
+  {
+   "task": "task_0022",
+   "pass": true,
+   "turns": 11,
+   "runs": 2,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+  },
+  {
+   "task": "task_0023",
+   "pass": true,
+   "turns": 5,
+   "runs": 1,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Player damage signal updates the HUD"
+  },
+  {
+   "task": "task_0024",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 4,
+   "test_ok": null,
+   "msg": "item_highlight_mesh export is unassigned"
+  },
+  {
+   "task": "task_0025",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "'interact' action must be bound to the F key"
+  },
+  {
+   "task": "task_0026",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 1,
+   "test_ok": null,
+   "msg": "Export 'camera_shake_noise' missing on PlayerBody"
+  },
+  {
+   "task": "task_0027",
+   "pass": true,
+   "turns": 17,
+   "runs": 4,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Weapon recoil signal wired into PlayerBody"
+  },
+  {
+   "task": "task_0028",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 6,
+   "test_ok": null,
+   "msg": "PillarPoint node missing"
+  },
+  {
+   "task": "task_0029",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 7,
+   "test_ok": false,
+   "msg": "EnemySpawnPointA TargetToSet must reference PlayerBody."
+  },
+  {
+   "task": "task_0030",
+   "pass": false,
+   "turns": 9,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Main scene missing"
+  },
+  {
+   "task": "task_0031",
+   "pass": true,
+   "turns": 10,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "VALIDATION_PASSED: Point light, effector, and mask configuration complete"
+  },
+  {
+   "task": "task_0032",
+   "pass": false,
+   "turns": 20,
+   "runs": 8,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "SmokeEmitter.draw_pass_1 must be a QuadMesh"
+  },
+  {
+   "task": "task_0033",
+   "pass": false,
+   "turns": 2,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "ArcingChunks lifetime must be 3 seconds"
+  },
+  {
+   "task": "task_0034",
+   "pass": false,
+   "turns": 10,
+   "runs": 1,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "debug dictionary missing velocity entry"
+  },
+  {
+   "task": "task_0035",
+   "pass": true,
+   "turns": 9,
+   "runs": 2,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Steering gizmos are drawn with lines and circles"
+  },
+  {
+   "task": "task_0036",
+   "pass": true,
+   "turns": 20,
+   "runs": 4,
+   "finished": true,
+   "tests": 7,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Trait UI updates counts, thresholds, and highlights correctly"
+  },
+  {
+   "task": "task_0037",
+   "pass": false,
+   "turns": 13,
+   "runs": 2,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Dropping a unit that is not hovering the portal must not change gold"
+  },
+  {
+   "task": "task_0038",
+   "pass": false,
+   "turns": 10,
+   "runs": 2,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0039",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 7,
+   "test_ok": false,
+   "msg": "Smoke needs +-30 directional sway via directional velocity settings"
+  },
+  {
+   "task": "task_0040",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 1,
+   "test_ok": false,
+   "msg": "no marker: TIMEOUT"
+  },
+  {
+   "task": "task_0041",
+   "pass": false,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 11,
+   "test_ok": false,
+   "msg": "LeftWall.rightPointUp must be connected to _on_left_wall_right_point_up"
+  },
+  {
+   "task": "task_0042",
+   "pass": false,
+   "turns": 10,
+   "runs": 2,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Camera2D must use res://scripts/Camera2D.gd"
+  },
+  {
+   "task": "task_0043",
+   "pass": true,
+   "turns": 14,
+   "runs": 4,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Portrait balloon layout configured correctly"
+  },
+  {
+   "task": "task_0044",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 1,
+   "test_ok": false,
+   "msg": "Items must assign the icon texture when added"
+  },
+  {
+   "task": "task_0045",
+   "pass": false,
+   "turns": 13,
+   "runs": 3,
+   "finished": false,
+   "tests": 4,
+   "test_ok": null,
+   "msg": "animation_tree must reference ArmsContainer/ArmsMesh/AnimationTree"
+  },
+  {
+   "task": "task_0046",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 4,
+   "test_ok": false,
+   "msg": "Player must instance the ProtoController scene"
+  },
+  {
+   "task": "task_0047",
+   "pass": false,
+   "turns": 8,
+   "runs": 2,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "TorchLeft CanvasItemMaterial must be Light Only"
+  },
+  {
+   "task": "task_0048",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 13,
+   "test_ok": true,
+   "msg": "Draggable without overlaps must call self_destruct and queue_free"
+  },
+  {
+   "task": "task_0049",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 5,
+   "test_ok": false,
+   "msg": "Add a Sprite2d child to Player"
+  },
+  {
+   "task": "task_0050",
+   "pass": true,
+   "turns": 11,
+   "runs": 2,
+   "finished": true,
+   "tests": 6,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Tweened grid movement with collision gating is implemented"
+  },
+  {
+   "task": "task_0051",
+   "pass": true,
+   "turns": 11,
+   "runs": 3,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Player node and script match the tutorial requirements"
+  },
+  {
+   "task": "task_0052",
+   "pass": true,
+   "turns": 10,
+   "runs": 1,
+   "finished": true,
+   "tests": 5,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Player controller uses lerp-based acceleration/friction and preserves jump."
+  },
+  {
+   "task": "task_0053",
+   "pass": true,
+   "turns": 14,
+   "runs": 1,
+   "finished": true,
+   "tests": 6,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Car scene hierarchy matches tutorial setup"
+  },
+  {
+   "task": "task_0054",
+   "pass": false,
+   "turns": 20,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Set Player.motion_mode to Floating for 8-direction movement"
+  },
+  {
+   "task": "task_0055",
+   "pass": false,
+   "turns": 4,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "player.gd must reference get_local_mouse_position"
+  },
+  {
+   "task": "task_0056",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 3,
+   "test_ok": null,
+   "msg": "Sweep.fill_mode must be Counter Clockwise"
+  },
+  {
+   "task": "task_0057",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 3,
+   "test_ok": null,
+   "msg": "Main needs at least two Unit instances for testing"
+  },
+  {
+   "task": "task_0058",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Margins should be 20 on all sides"
+  },
+  {
+   "task": "task_0059",
+   "pass": false,
+   "turns": 19,
+   "runs": 6,
+   "finished": true,
+   "tests": 5,
+   "test_ok": true,
+   "msg": "Minimap margins must all be 5"
+  },
+  {
+   "task": "task_0060",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Minimap must be a script instance"
+  },
+  {
+   "task": "task_0061",
+   "pass": true,
+   "turns": 12,
+   "runs": 1,
+   "finished": true,
+   "tests": 5,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: CanvasLayer and Label configured correctly"
+  },
+  {
+   "task": "task_0062",
+   "pass": false,
+   "turns": 20,
+   "runs": 8,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "WorldEnvironment with procedural sky missing"
+  },
+  {
+   "task": "task_0063",
+   "pass": false,
+   "turns": 19,
+   "runs": 5,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "Top margin left padding must be 20"
+  },
+  {
+   "task": "task_0064",
+   "pass": false,
+   "turns": 16,
+   "runs": 2,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "no marker: TIMEOUT"
+  },
+  {
+   "task": "task_0065",
+   "pass": false,
+   "turns": 6,
+   "runs": 1,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "MarginContainer with HUD labels missing"
+  },
+  {
+   "task": "task_0066",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 9,
+   "test_ok": true,
+   "msg": "Hidden template Sprite2D/CollisionShape2D not found under Templates"
+  },
+  {
+   "task": "task_0067",
+   "pass": false,
+   "turns": 14,
+   "runs": 4,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Sprite2D region must crop the missile (Rect2(69,0,4,4))"
+  },
+  {
+   "task": "task_0068",
+   "pass": false,
+   "turns": 14,
+   "runs": 2,
+   "finished": true,
+   "tests": 7,
+   "test_ok": true,
+   "msg": "Crate must be destroyed after bullet hit"
+  },
+  {
+   "task": "task_0069",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "Camera should be angled such that all spheres are visible"
+  },
+  {
+   "task": "task_0070",
+   "pass": false,
+   "turns": 20,
+   "runs": 8,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Water requires a ShaderMaterial override (via material_override or surface_material_override)"
+  },
+  {
+   "task": "task_0071",
+   "pass": false,
+   "turns": 8,
+   "runs": 2,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "PlaneMesh subdivisions must be 20x20"
+  },
+  {
+   "task": "task_0072",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 3,
+   "test_ok": false,
+   "msg": "Water requires a ShaderMaterial override (via material_override or surface_material_override)"
+  },
+  {
+   "task": "task_0073",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 4,
+   "test_ok": false,
+   "msg": "Shader must reference res://scenes/WaterShader.tres"
+  },
+  {
+   "task": "task_0074",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "WorldEnvironment with procedural sky missing"
+  },
+  {
+   "task": "task_0075",
+   "pass": false,
+   "turns": 20,
+   "runs": 9,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "WorldEnvironment with procedural sky missing"
+  },
+  {
+   "task": "task_0076",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 11,
+   "test_ok": true,
+   "msg": "Water requires a ShaderMaterial override (via material_override or surface_material_override)"
+  },
+  {
+   "task": "task_0077",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 7,
+   "test_ok": false,
+   "msg": "Camera should be angled such that all spheres are visible"
+  },
+  {
+   "task": "task_0078",
+   "pass": false,
+   "turns": 18,
+   "runs": 4,
+   "finished": true,
+   "tests": 7,
+   "test_ok": true,
+   "msg": "Camera should be angled such that all spheres are visible"
+  },
+  {
+   "task": "task_0079",
+   "pass": false,
+   "turns": 4,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Add the Player scene to Main"
+  },
+  {
+   "task": "task_0080",
+   "pass": false,
+   "turns": 5,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Set Player.motion_mode to Floating for 8-direction movement"
+  },
+  {
+   "task": "task_0081",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 1,
+   "test_ok": false,
+   "msg": "Set Player.motion_mode to Floating for 8-direction movement"
+  },
+  {
+   "task": "task_0083",
+   "pass": false,
+   "turns": 2,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Player requires a CollisionShape2D child"
+  },
+  {
+   "task": "task_0084",
+   "pass": false,
+   "turns": 5,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Missing death0 animation"
+  },
+  {
+   "task": "task_0085",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 1,
+   "test_ok": false,
+   "msg": "Action 'freefly' is not bound to its expected key"
+  },
+  {
+   "task": "task_0086",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 5,
+   "test_ok": true,
+   "msg": "Add a Sprite2d child to Player"
+  },
+  {
+   "task": "task_0087",
+   "pass": false,
+   "turns": 20,
+   "runs": 9,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Player instance not found under Main"
+  },
+  {
+   "task": "task_0088",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 4,
+   "test_ok": null,
+   "msg": "Add a Sprite2d child to Player"
+  },
+  {
+   "task": "task_0090",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "AnimationPlayer must include a 'up' animation"
+  },
+  {
+   "task": "task_0091",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 8,
+   "test_ok": false,
+   "msg": "Upper animation did not sync to lower animation changes"
+  },
+  {
+   "task": "task_0092",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 5,
+   "test_ok": null,
+   "msg": "music_player.tscn failed to load"
+  },
+  {
+   "task": "task_0093",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 3,
+   "test_ok": null,
+   "msg": "BattleOverPanel process_mode must be Always"
+  },
+  {
+   "task": "task_0094",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 1,
+   "test_ok": null,
+   "msg": "RomPickerDialog title incorrect"
+  },
+  {
+   "task": "task_0095",
+   "pass": false,
+   "turns": 6,
+   "runs": 1,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Shader code missing required parts: const float curvature = 7.0, const float vignette_multiplier = 2.0, uniform sampler2D screen_texture: hint_screen_texture, f"
+  },
+  {
+   "task": "task_0096",
+   "pass": false,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 7,
+   "test_ok": true,
+   "msg": "ScreenQuad must use a ShaderMaterial"
+  },
+  {
+   "task": "task_0097",
+   "pass": false,
+   "turns": 20,
+   "runs": 8,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "DistortionPreview must use a ShaderMaterial"
+  },
+  {
+   "task": "task_0098",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 1,
+   "test_ok": false,
+   "msg": "run animation step must be 0.1"
+  },
+  {
+   "task": "task_0099",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 7,
+   "test_ok": false,
+   "msg": "UI anchors/offsets not configured"
+  },
+  {
+   "task": "task_0100",
+   "pass": false,
+   "turns": 16,
+   "runs": 2,
+   "finished": true,
+   "tests": 8,
+   "test_ok": true,
+   "msg": "Shader missing HQX marker: diag("
+  },
+  {
+   "task": "task_0101",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 9,
+   "test_ok": false,
+   "msg": "Timer autostart must be true"
+  },
+  {
+   "task": "task_0102",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "TileMap must have at least two layers"
+  },
+  {
+   "task": "task_0103",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 7,
+   "test_ok": true,
+   "msg": "NavigationAgent2D path_postprocessing must be Corridor"
+  },
+  {
+   "task": "task_0104",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 2,
+   "test_ok": false,
+   "msg": "default animation frames must use an atlas texture"
+  },
+  {
+   "task": "task_0105",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Music bus missing in default_bus_layout.tres"
+  },
+  {
+   "task": "task_0106",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "outline.glsl missing 'readonly buffer Params'"
+  },
+  {
+   "task": "task_0108",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "TileSet missing tile_type custom data layer"
+  },
+  {
+   "task": "task_0109",
+   "pass": false,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 14,
+   "test_ok": false,
+   "msg": "Missing method track"
+  },
+  {
+   "task": "task_0110",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 5,
+   "test_ok": false,
+   "msg": "ShaderMaterial not assigned to SphereMesh"
+  },
+  {
+   "task": "task_0111",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "ShaderMaterial not assigned to SphereMesh"
+  },
+  {
+   "task": "task_0113",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "TileSet atlas source missing"
+  },
+  {
+   "task": "task_0114",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 8,
+   "test_ok": false,
+   "msg": "DustParticles texture must be star_particle.png"
+  },
+  {
+   "task": "task_0115",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 6,
+   "test_ok": false,
+   "msg": "Add a Node2D named SpawningPoints under Trap"
+  },
+  {
+   "task": "task_0116",
+   "pass": false,
+   "turns": 20,
+   "runs": 8,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "Rain texture should be set"
+  },
+  {
+   "task": "task_0117",
+   "pass": false,
+   "turns": 2,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Rain texture should be set"
+  },
+  {
+   "task": "task_0118",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 12,
+   "test_ok": true,
+   "msg": "Sprite2D texture position is misplaced"
+  },
+  {
+   "task": "task_0119",
+   "pass": false,
+   "turns": 12,
+   "runs": 2,
+   "finished": true,
+   "tests": 5,
+   "test_ok": true,
+   "msg": "SpawnLeft must sit 15px above Trap (Vector2(-15, 0))"
+  },
+  {
+   "task": "task_0120",
+   "pass": true,
+   "turns": 5,
+   "runs": 1,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+  },
+  {
+   "task": "task_0121",
+   "pass": false,
+   "turns": 18,
+   "runs": 4,
+   "finished": true,
+   "tests": 5,
+   "test_ok": true,
+   "msg": "PortraitTexture must have unique_name_in_owner enabled"
+  },
+  {
+   "task": "task_0122",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "Highlight mesh does not have flipped faces"
+  },
+  {
+   "task": "task_0123",
+   "pass": false,
+   "turns": 18,
+   "runs": 8,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Base layer check failed, expected (1, 1) at (0, 8), got (-1, -1) instead"
+  },
+  {
+   "task": "task_0124",
+   "pass": true,
+   "turns": 11,
+   "runs": 2,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Task completed successfully"
+  },
+  {
+   "task": "task_0125",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 7,
+   "test_ok": false,
+   "msg": "Tile (0, 0) needs a collision polygon on physics layer 0"
+  },
+  {
+   "task": "task_0126",
+   "pass": false,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 15,
+   "test_ok": false,
+   "msg": "Select Fractal label text incorrect"
+  },
+  {
+   "task": "task_0127",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 3,
+   "test_ok": false,
+   "msg": "Music stream not set"
+  },
+  {
+   "task": "task_0128",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 2,
+   "test_ok": false,
+   "msg": "Panel material must be materials/julia.material"
+  },
+  {
+   "task": "task_0129",
+   "pass": false,
+   "turns": 20,
+   "runs": 9,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Background mode must be SKY"
+  },
+  {
+   "task": "task_0130",
+   "pass": true,
+   "turns": 14,
+   "runs": 3,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Fog and LUT configuration complete"
+  },
+  {
+   "task": "task_0131",
+   "pass": false,
+   "turns": 1,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Minimap size should be 200x200"
+  },
+  {
+   "task": "task_0132",
+   "pass": false,
+   "turns": 1,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "PlayerMarker should start centered on Grid"
+  },
+  {
+   "task": "task_0133",
+   "pass": false,
+   "turns": 14,
+   "runs": 2,
+   "finished": true,
+   "tests": 8,
+   "test_ok": true,
+   "msg": "PowerMeter should be centered (anchor_left/right = 0.5)"
+  },
+  {
+   "task": "task_0134",
+   "pass": true,
+   "turns": 8,
+   "runs": 1,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: bottom preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0135",
+   "pass": true,
+   "turns": 6,
+   "runs": 1,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: bottom preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0136",
+   "pass": true,
+   "turns": 6,
+   "runs": 2,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: bottom preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0137",
+   "pass": true,
+   "turns": 10,
+   "runs": 3,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: bottom preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0138",
+   "pass": false,
+   "turns": 4,
+   "runs": 1,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "AlertDialog should keep the Center preset growth behavior"
+  },
+  {
+   "task": "task_0139",
+   "pass": false,
+   "turns": 5,
+   "runs": 1,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "DangerDialog should keep the Center preset growth behavior"
+  },
+  {
+   "task": "task_0140",
+   "pass": false,
+   "turns": 9,
+   "runs": 1,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "WarningDialog should keep the Center preset growth behavior"
+  },
+  {
+   "task": "task_0141",
+   "pass": true,
+   "turns": 10,
+   "runs": 2,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: top preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0142",
+   "pass": true,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 5,
+   "test_ok": null,
+   "msg": "VALIDATION_PASSED: top preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0143",
+   "pass": true,
+   "turns": 5,
+   "runs": 1,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: top preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0144",
+   "pass": false,
+   "turns": 10,
+   "runs": 1,
+   "finished": true,
+   "tests": 6,
+   "test_ok": true,
+   "msg": "PowerMeter should keep the Left Wide preset growth behavior"
+  },
+  {
+   "task": "task_0145",
+   "pass": true,
+   "turns": 6,
+   "runs": 1,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: left preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0146",
+   "pass": true,
+   "turns": 5,
+   "runs": 1,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: left preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0147",
+   "pass": true,
+   "turns": 11,
+   "runs": 2,
+   "finished": true,
+   "tests": 6,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: right preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0148",
+   "pass": true,
+   "turns": 7,
+   "runs": 1,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: right preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0149",
+   "pass": true,
+   "turns": 8,
+   "runs": 1,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: right preset HUD variant is configured correctly"
+  },
+  {
+   "task": "task_0150",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 1,
+   "test_ok": false,
+   "msg": "BattleOverPanel process_mode must be Always"
+  },
+  {
+   "task": "task_0151",
+   "pass": false,
+   "turns": 11,
+   "runs": 3,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "ContinueButton size_flags_horizontal must be Expand Fill"
+  },
+  {
+   "task": "task_0152",
+   "pass": false,
+   "turns": 17,
+   "runs": 6,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "ContinueButton size_flags_horizontal must be Fill"
+  },
+  {
+   "task": "task_0153",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 8,
+   "test_ok": true,
+   "msg": "ContinueButton size_flags_horizontal must be Fill"
+  },
+  {
+   "task": "task_0154",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 8,
+   "test_ok": false,
+   "msg": "ContinueButton size_flags_horizontal must be Fill"
+  },
+  {
+   "task": "task_0155",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 5,
+   "test_ok": true,
+   "msg": "ContinueButton size_flags_horizontal must be Expand"
+  },
+  {
+   "task": "task_0156",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "ContinueButton size_flags_horizontal must be Shrink Begin"
+  },
+  {
+   "task": "task_0157",
+   "pass": false,
+   "turns": 13,
+   "runs": 4,
+   "finished": true,
+   "tests": 5,
+   "test_ok": true,
+   "msg": "ContinueButton size_flags_horizontal must be Shrink Begin"
+  },
+  {
+   "task": "task_0158",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 7,
+   "test_ok": null,
+   "msg": "ContinueButton size_flags_horizontal must be Expand"
+  },
+  {
+   "task": "task_0159",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 12,
+   "test_ok": true,
+   "msg": "ContinueButton size_flags_horizontal must be Expand"
+  },
+  {
+   "task": "task_0160",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 3,
+   "test_ok": null,
+   "msg": "no marker: "
+  },
+  {
+   "task": "task_0161",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 7,
+   "test_ok": null,
+   "msg": "ContinueButton size_flags_horizontal must be Expand Fill"
+  },
+  {
+   "task": "task_0162",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 3,
+   "test_ok": false,
+   "msg": "ContinueButton size_flags_horizontal must be Shrink Begin"
+  },
+  {
+   "task": "task_0163",
+   "pass": false,
+   "turns": 20,
+   "runs": 9,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "ContinueButton size_flags_horizontal must be Shrink Begin"
+  },
+  {
+   "task": "task_0164",
+   "pass": false,
+   "turns": 19,
+   "runs": 5,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "takeoff animation must use the expected frame from the 7th row"
+  },
+  {
+   "task": "task_0165",
+   "pass": false,
+   "turns": 15,
+   "runs": 3,
+   "finished": false,
+   "tests": 7,
+   "test_ok": false,
+   "msg": "jumpkick animation must use the expected frame from the 7th row"
+  },
+  {
+   "task": "task_0166",
+   "pass": false,
+   "turns": 14,
+   "runs": 3,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "kick animation must use all valid frames from the 5th row"
+  },
+  {
+   "task": "task_0167",
+   "pass": true,
+   "turns": 7,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "VALIDATION_PASSED: fighter jab action and animation are implemented"
+  },
+  {
+   "task": "task_0168",
+   "pass": true,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "VALIDATION_PASSED: enemy death logic and animation are implemented"
+  },
+  {
+   "task": "task_0169",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 7,
+   "test_ok": false,
+   "msg": "hurt animation must use the first 2 valid frames from the 6th row of the new spritesheet"
+  },
+  {
+   "task": "task_0170",
+   "pass": false,
+   "turns": 18,
+   "runs": 2,
+   "finished": false,
+   "tests": 6,
+   "test_ok": false,
+   "msg": "strike animation must use all valid frames from the 6th row"
+  },
+  {
+   "task": "task_0171",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 4,
+   "test_ok": false,
+   "msg": "punch animation must use the first 3 valid frames from the 3rd row"
+  },
+  {
+   "task": "task_0172",
+   "pass": false,
+   "turns": 2,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "TileSet must define a custom data layer"
+  },
+  {
+   "task": "task_0173",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 18,
+   "test_ok": false,
+   "msg": "TileSet must define a custom data layer"
+  },
+  {
+   "task": "task_0174",
+   "pass": false,
+   "turns": 2,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Terrain set 0 must contain at least 2 terrains"
+  },
+  {
+   "task": "task_0175",
+   "pass": false,
+   "turns": 5,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "TileSet must define a custom data layer"
+  },
+  {
+   "task": "task_0176",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 12,
+   "test_ok": false,
+   "msg": "Tile (0, 0) must have a collision polygon"
+  },
+  {
+   "task": "task_0177",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "TileSet must define a terrain set"
+  },
+  {
+   "task": "task_0178",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 18,
+   "test_ok": false,
+   "msg": "TileSet must define at least 2 custom data layers"
+  },
+  {
+   "task": "task_0179",
+   "pass": false,
+   "turns": 6,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Cloud tile (13, 7) must use the standard full-tile collision polygon"
+  },
+  {
+   "task": "task_0180",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 16,
+   "test_ok": false,
+   "msg": "Waterfall tile (14, 1) must have a z-index larger than the player"
+  },
+  {
+   "task": "task_0181",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 9,
+   "test_ok": false,
+   "msg": "TileSet must use a valid tile shape and tile size combination for the diagonal tileset"
+  },
+  {
+   "task": "task_0182",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 14,
+   "test_ok": false,
+   "msg": "Tile (0, 3) must have probability 0.25"
+  },
+  {
+   "task": "task_0183",
+   "pass": false,
+   "turns": 20,
+   "runs": 0,
+   "finished": false,
+   "tests": 18,
+   "test_ok": false,
+   "msg": "TileSet must define a navigation layer"
+  },
+  {
+   "task": "task_0184",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 2,
+   "test_ok": false,
+   "msg": "basic_enemy.gd must extend Character"
+  },
+  {
+   "task": "task_0185",
+   "pass": false,
+   "turns": 3,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "TileSet must define a terrain set"
+  },
+  {
+   "task": "task_0186",
+   "pass": false,
+   "turns": 2,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Non-path tile (3, 3) must not be walkable"
+  },
+  {
+   "task": "task_0187",
+   "pass": false,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 11,
+   "test_ok": null,
+   "msg": "Background mode must be SKY"
+  },
+  {
+   "task": "task_0188",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "WorldEnvironment lacks Environment resource"
+  },
+  {
+   "task": "task_0189",
+   "pass": false,
+   "turns": 2,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "TileSet must define at least 2 custom data layers"
+  },
+  {
+   "task": "task_0190",
+   "pass": false,
+   "turns": 2,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Solid tile (16, 0) must use the standard full-tile collision polygon"
+  },
+  {
+   "task": "task_0191",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 11,
+   "test_ok": null,
+   "msg": "Background mode must be SKY"
+  },
+  {
+   "task": "task_0192",
+   "pass": true,
+   "turns": 14,
+   "runs": 4,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "VALIDATION_PASSED: Task completed successfully"
+  },
+  {
+   "task": "task_0193",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 3,
+   "test_ok": null,
+   "msg": "Main scene not found"
+  },
+  {
+   "task": "task_0194",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 7,
+   "test_ok": null,
+   "msg": "DustParticles texture must be star_particle.png"
+  },
+  {
+   "task": "task_0195",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 7,
+   "test_ok": null,
+   "msg": "Main scene not found"
+  },
+  {
+   "task": "task_0196",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 9,
+   "test_ok": true,
+   "msg": "DustParticles texture must be star_particle.png"
+  },
+  {
+   "task": "task_0197",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "DustParticles texture must be star_particle.png"
+  },
+  {
+   "task": "task_0198",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 3,
+   "test_ok": null,
+   "msg": "DustParticles texture must be star_particle.png"
+  },
+  {
+   "task": "task_0199",
+   "pass": false,
+   "turns": 12,
+   "runs": 3,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "DustParticles texture must be star_particle.png"
+  },
+  {
+   "task": "task_0200",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 13,
+   "test_ok": null,
+   "msg": "SpawnTop must sit 15px above Trap (Vector2(0, 15))"
+  },
+  {
+   "task": "task_0201",
+   "pass": false,
+   "turns": 16,
+   "runs": 4,
+   "finished": true,
+   "tests": 6,
+   "test_ok": true,
+   "msg": "SpawnTop must sit 15px above Trap (Vector2(0, 15))"
+  },
+  {
+   "task": "task_0202",
+   "pass": false,
+   "turns": 11,
+   "runs": 2,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "SpawnTop must line up with the upper spike tip"
+  },
+  {
+   "task": "task_0203",
+   "pass": false,
+   "turns": 17,
+   "runs": 4,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "SpawnTop must line up with the 5th spike from the left"
+  },
+  {
+   "task": "task_0204",
+   "pass": false,
+   "turns": 13,
+   "runs": 4,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "SpawnTop must line up with the bottom tip of the branch closest to the water"
+  },
+  {
+   "task": "task_0205",
+   "pass": false,
+   "turns": 14,
+   "runs": 3,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "SpawnTop must line up with the bottom tip of the branch closest to the water"
+  },
+  {
+   "task": "task_0206",
+   "pass": false,
+   "turns": 15,
+   "runs": 3,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "SpawnTop must line up with the bottom tip of the branch closest to the water"
+  },
+  {
+   "task": "task_0207",
+   "pass": false,
+   "turns": 13,
+   "runs": 4,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "SpawnTop must line up with the bottom tip of the branch closest to the water"
+  },
+  {
+   "task": "task_0208",
+   "pass": false,
+   "turns": 19,
+   "runs": 3,
+   "finished": true,
+   "tests": 9,
+   "test_ok": true,
+   "msg": "SpawnTop must line up with the bottom tip of the branch closest to the water"
+  },
+  {
+   "task": "task_0209",
+   "pass": false,
+   "turns": 15,
+   "runs": 5,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "SpawnTop must line up with the bottom tip of the branch closest to the water"
+  },
+  {
+   "task": "task_0210",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 12,
+   "test_ok": false,
+   "msg": "SpawnTop must line up with the bottom tip of the branch closest to the water"
+  },
+  {
+   "task": "task_0211",
+   "pass": false,
+   "turns": 13,
+   "runs": 3,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "SpawnTop must line up with the bottom tip of the branch closest to the water"
+  },
+  {
+   "task": "task_0212",
+   "pass": false,
+   "turns": 12,
+   "runs": 3,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "SpawnTop must line up with the bottom tip of the branch closest to the water"
+  },
+  {
+   "task": "task_0213",
+   "pass": false,
+   "turns": 18,
+   "runs": 2,
+   "finished": true,
+   "tests": 13,
+   "test_ok": true,
+   "msg": "SpawnTop must line up with the bottom tip of the branch closest to the water"
+  },
+  {
+   "task": "task_0214",
+   "pass": false,
+   "turns": 19,
+   "runs": 5,
+   "finished": true,
+   "tests": 5,
+   "test_ok": true,
+   "msg": "SpawnTop must line up with the bottom tip of the branch closest to the water"
+  },
+  {
+   "task": "task_0215",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 9,
+   "test_ok": true,
+   "msg": "SpawnTop must line up with the bottom tip of the branch closest to the water"
+  },
+  {
+   "task": "task_0216",
+   "pass": false,
+   "turns": 9,
+   "runs": 3,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "CoinHighlight1 must tightly cover one of the coins with overlap above 90% (best IoU=0.0000)"
+  },
+  {
+   "task": "task_0217",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 16,
+   "test_ok": true,
+   "msg": "Add a Node2D named CoinHighlights under Level"
+  },
+  {
+   "task": "task_0218",
+   "pass": false,
+   "turns": 13,
+   "runs": 3,
+   "finished": true,
+   "tests": 6,
+   "test_ok": true,
+   "msg": "CoinHighlight1 should use a semi-transparent color"
+  },
+  {
+   "task": "task_0219",
+   "pass": false,
+   "turns": 8,
+   "runs": 2,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "CoinHighlight1 must tightly cover one of the coins with overlap above 90% (best IoU=0.0000)"
+  },
+  {
+   "task": "task_0220",
+   "pass": false,
+   "turns": 8,
+   "runs": 3,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "CoinHighlight1 should use a semi-transparent color"
+  },
+  {
+   "task": "task_0221",
+   "pass": false,
+   "turns": 7,
+   "runs": 1,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "CoinHighlight1 must tightly cover one of the coins with overlap above 90% (best IoU=0.0000)"
+  },
+  {
+   "task": "task_0222",
+   "pass": false,
+   "turns": 8,
+   "runs": 2,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "CoinHighlight1 must tightly cover one of the coins with overlap above 90% (best IoU=0.0000)"
+  },
+  {
+   "task": "task_0223",
+   "pass": false,
+   "turns": 14,
+   "runs": 3,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "CoinHighlight1 must tightly cover one of the coins with overlap above 90% (best IoU=0.0000)"
+  },
+  {
+   "task": "task_0224",
+   "pass": false,
+   "turns": 9,
+   "runs": 3,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "CoinHighlight1 must tightly cover one of the coins with overlap above 90% (best IoU=0.0000)"
+  },
+  {
+   "task": "task_0225",
+   "pass": false,
+   "turns": 3,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Add a Node2D named CoinHighlights under Level"
+  },
+  {
+   "task": "task_0226",
+   "pass": false,
+   "turns": 8,
+   "runs": 3,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "CoinHighlight1 should use a semi-transparent color"
+  },
+  {
+   "task": "task_0227",
+   "pass": false,
+   "turns": 20,
+   "runs": 8,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "StarHighlight must cover the star with overlap above 85% (IoU=0.0000)"
+  },
+  {
+   "task": "task_0228",
+   "pass": false,
+   "turns": 11,
+   "runs": 2,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "StarHighlight must cover the star with overlap above 85% (IoU=0.0000)"
+  },
+  {
+   "task": "task_0229",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "StarHighlight should use a semi-transparent color or modulate"
+  },
+  {
+   "task": "task_0230",
+   "pass": false,
+   "turns": 11,
+   "runs": 2,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "StarHighlight should use a star-like polygon with several points"
+  },
+  {
+   "task": "task_0231",
+   "pass": false,
+   "turns": 7,
+   "runs": 2,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "StarHighlight must cover the star with overlap above 85% (IoU=0.0000)"
+  },
+  {
+   "task": "task_0232",
+   "pass": false,
+   "turns": 18,
+   "runs": 5,
+   "finished": true,
+   "tests": 6,
+   "test_ok": true,
+   "msg": "StarHighlight must cover the star with overlap above 85% (IoU=0.0000)"
+  },
+  {
+   "task": "task_0233",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 1,
+   "test_ok": null,
+   "msg": "StarHighlights needs a Polygon2D child named StarHighlight"
+  },
+  {
+   "task": "task_0234",
+   "pass": false,
+   "turns": 6,
+   "runs": 1,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "StarHighlight should use a semi-transparent color or modulate"
+  },
+  {
+   "task": "task_0235",
+   "pass": false,
+   "turns": 8,
+   "runs": 1,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "StarHighlight must stay inside the platformer image bounds"
+  },
+  {
+   "task": "task_0236",
+   "pass": false,
+   "turns": 14,
+   "runs": 4,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "StarHighlight must cover the star with overlap above 85% (IoU=0.0000)"
+  },
+  {
+   "task": "task_0237",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "StarHighlight should use a semi-transparent color or modulate"
+  },
+  {
+   "task": "task_0238",
+   "pass": false,
+   "turns": 9,
+   "runs": 1,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "GemstoneHighlight should use a purple or pink-purple tint"
+  },
+  {
+   "task": "task_0239",
+   "pass": false,
+   "turns": 6,
+   "runs": 1,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "GemstoneHighlight should use a purple or pink-purple tint"
+  },
+  {
+   "task": "task_0240",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 11,
+   "test_ok": true,
+   "msg": "GemstoneHighlight should use a purple or pink-purple tint"
+  },
+  {
+   "task": "task_0241",
+   "pass": false,
+   "turns": 11,
+   "runs": 3,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "GemstoneHighlight should use a purple or pink-purple tint"
+  },
+  {
+   "task": "task_0242",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 9,
+   "test_ok": false,
+   "msg": "GemstoneHighlight should use a purple or pink-purple tint"
+  },
+  {
+   "task": "task_0243",
+   "pass": false,
+   "turns": 20,
+   "runs": 8,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "GemstoneHighlight should use a purple or pink-purple tint"
+  },
+  {
+   "task": "task_0244",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "GemstoneHighlight should use a purple or pink-purple tint"
+  },
+  {
+   "task": "task_0245",
+   "pass": false,
+   "turns": 7,
+   "runs": 1,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "GemstoneHighlight should use a purple or pink-purple tint"
+  },
+  {
+   "task": "task_0246",
+   "pass": false,
+   "turns": 10,
+   "runs": 2,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "GemstoneHighlight should use a purple or pink-purple tint"
+  },
+  {
+   "task": "task_0247",
+   "pass": false,
+   "turns": 7,
+   "runs": 1,
+   "finished": true,
+   "tests": 1,
+   "test_ok": true,
+   "msg": "GemstoneHighlight should use a purple or pink-purple tint"
+  },
+  {
+   "task": "task_0248",
+   "pass": false,
+   "turns": 20,
+   "runs": 8,
+   "finished": false,
+   "tests": 1,
+   "test_ok": null,
+   "msg": "GemstoneHighlights needs a Polygon2D child named GemstoneHighlight"
+  },
+  {
+   "task": "task_0249",
+   "pass": false,
+   "turns": 1,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Enemy must have a script attached"
+  },
+  {
+   "task": "task_0250",
+   "pass": false,
+   "turns": 1,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Chaser goal must resolve to the live Goal node at runtime"
+  },
+  {
+   "task": "task_0251",
+   "pass": false,
+   "turns": 1,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Guard beacon must resolve to the live Beacon node at runtime"
+  },
+  {
+   "task": "task_0252",
+   "pass": false,
+   "turns": 1,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Drone focus must resolve to the live Focus node at runtime"
+  },
+  {
+   "task": "task_0253",
+   "pass": false,
+   "turns": 1,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Hunter marker must resolve to the live Marker node at runtime"
+  },
+  {
+   "task": "task_0254",
+   "pass": false,
+   "turns": 1,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Seeker objective must resolve to the live Objective node at runtime"
+  },
+  {
+   "task": "task_0255",
+   "pass": false,
+   "turns": 1,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Bot checkpoint must resolve to the live Checkpoint node at runtime"
+  },
+  {
+   "task": "task_0256",
+   "pass": false,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "game.tscn must instance the UI scene as UI"
+  },
+  {
+   "task": "task_0257",
+   "pass": false,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "game.tscn must instance the UI scene as UI"
+  },
+  {
+   "task": "task_0258",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 2,
+   "test_ok": null,
+   "msg": "game.tscn must instance the UI scene as UI"
+  },
+  {
+   "task": "task_0259",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "no marker: TIMEOUT"
+  },
+  {
+   "task": "task_0260",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "game.tscn must instance the World scene as World"
+  },
+  {
+   "task": "task_0261",
+   "pass": true,
+   "turns": 18,
+   "runs": 2,
+   "finished": false,
+   "tests": 7,
+   "test_ok": false,
+   "msg": "VALIDATION_PASSED: UI scene, game wrapper, and signal-driven HUD behavior restored"
+  },
+  {
+   "task": "task_0262",
+   "pass": false,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "GameMenu must expose a unique-name MusicSlider"
+  },
+  {
+   "task": "task_0263",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 6,
+   "test_ok": false,
+   "msg": "DetectRange.base_range_size must be 30.0"
+  },
+  {
+   "task": "task_0264",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 3,
+   "test_ok": false,
+   "msg": "DetectRange.base_range_size must be 24.0"
+  },
+  {
+   "task": "task_0265",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 4,
+   "test_ok": null,
+   "msg": "DetectRange.base_range_size must be 28.0"
+  },
+  {
+   "task": "task_0266",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 1,
+   "test_ok": false,
+   "msg": "DetectRange.base_range_size must be 32.0"
+  },
+  {
+   "task": "task_0267",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 4,
+   "test_ok": false,
+   "msg": "DetectRange.base_range_size must be 36.0"
+  },
+  {
+   "task": "task_0268",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 6,
+   "test_ok": true,
+   "msg": "DetectRange.base_range_size must be 40.0"
+  },
+  {
+   "task": "task_0269",
+   "pass": false,
+   "turns": 18,
+   "runs": 4,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "DetectRange.base_range_size must be 26.0"
+  },
+  {
+   "task": "task_0270",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 4,
+   "test_ok": false,
+   "msg": "DetectRange.base_range_size must be 34.0"
+  },
+  {
+   "task": "task_0271",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 2,
+   "test_ok": false,
+   "msg": "DetectRange.base_range_size must be 22.0"
+  },
+  {
+   "task": "task_0272",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 5,
+   "test_ok": false,
+   "msg": "DetectRange.base_range_size must be 38.0"
+  },
+  {
+   "task": "task_0273",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 4,
+   "test_ok": null,
+   "msg": "DetectRange.base_range_size must be 27.0"
+  },
+  {
+   "task": "task_0274",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 5,
+   "test_ok": null,
+   "msg": "TargetFinder.has_target_in_range() must return true when an enemy is inside DetectRange"
+  },
+  {
+   "task": "task_0275",
+   "pass": false,
+   "turns": 19,
+   "runs": 5,
+   "finished": true,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "TargetFinder.has_target_in_range() must return true when an enemy is inside DetectRange"
+  },
+  {
+   "task": "task_0276",
+   "pass": false,
+   "turns": 14,
+   "runs": 2,
+   "finished": true,
+   "tests": 5,
+   "test_ok": true,
+   "msg": "TargetFinder.has_target_in_range() must return true when an enemy is inside DetectRange"
+  },
+  {
+   "task": "task_0277",
+   "pass": true,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 6,
+   "test_ok": null,
+   "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+  },
+  {
+   "task": "task_0278",
+   "pass": true,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 14,
+   "test_ok": false,
+   "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+  },
+  {
+   "task": "task_0279",
+   "pass": false,
+   "turns": 19,
+   "runs": 1,
+   "finished": true,
+   "tests": 15,
+   "test_ok": true,
+   "msg": "TargetFinder.has_target_in_range() must return true when an enemy is inside DetectRange"
+  },
+  {
+   "task": "task_0280",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 7,
+   "test_ok": null,
+   "msg": "Player DetectRange collision_layer must be 4 * (team + 1)"
+  },
+  {
+   "task": "task_0281",
+   "pass": false,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "CardStateMachine must enter CardBaseState on ready"
+  },
+  {
+   "task": "task_0282",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 5,
+   "test_ok": false,
+   "msg": "CardStateMachine must enter CardBaseState on ready"
+  },
+  {
+   "task": "task_0283",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "no marker: TIMEOUT"
+  },
+  {
+   "task": "task_0284",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "no marker: TIMEOUT"
+  },
+  {
+   "task": "task_0285",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "no marker: TIMEOUT"
+  },
+  {
+   "task": "task_0286",
+   "pass": false,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 3,
+   "test_ok": false,
+   "msg": "Mouse motion from the clicked state must enter the dragging state"
+  },
+  {
+   "task": "task_0287",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "no marker: TIMEOUT"
+  },
+  {
+   "task": "task_0288",
+   "pass": false,
+   "turns": 20,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "no marker: TIMEOUT"
+  },
+  {
+   "task": "task_0289",
+   "pass": false,
+   "turns": 20,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "CardStateMachine must enter CardBaseState on ready"
+  },
+  {
+   "task": "task_0290",
+   "pass": false,
+   "turns": 20,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "no marker: TIMEOUT"
+  },
+  {
+   "task": "task_0291",
+   "pass": false,
+   "turns": 20,
+   "runs": 2,
+   "finished": false,
+   "tests": 2,
+   "test_ok": false,
+   "msg": "CardStateMachine must enter CardBaseState on ready"
+  },
+  {
+   "task": "task_0292",
+   "pass": false,
+   "turns": 19,
+   "runs": 3,
+   "finished": false,
+   "tests": 4,
+   "test_ok": false,
+   "msg": "Dragging state must reparent the card into DragCanvas"
+  },
+  {
+   "task": "task_0293",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 5,
+   "test_ok": true,
+   "msg": "Mouse motion from the clicked state must enter the dragging state"
+  },
+  {
+   "task": "task_0294",
+   "pass": false,
+   "turns": 20,
+   "runs": 1,
+   "finished": false,
+   "tests": 7,
+   "test_ok": false,
+   "msg": "Dragging state must reparent the card into DragStage"
+  },
+  {
+   "task": "task_0295",
+   "pass": false,
+   "turns": 15,
+   "runs": 5,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Splash explosiveness should be 1.0 to fire bursts"
+  },
+  {
+   "task": "task_0296",
+   "pass": false,
+   "turns": 11,
+   "runs": 3,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0297",
+   "pass": false,
+   "turns": 13,
+   "runs": 4,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0298",
+   "pass": false,
+   "turns": 9,
+   "runs": 2,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0299",
+   "pass": false,
+   "turns": 2,
+   "runs": 0,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Rain should emit at least 500 particles"
+  },
+  {
+   "task": "task_0300",
+   "pass": false,
+   "turns": 14,
+   "runs": 4,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Rain emission box must span roughly 900 pixels to each side"
+  },
+  {
+   "task": "task_0301",
+   "pass": false,
+   "turns": 13,
+   "runs": 4,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Splash explosiveness should be 1.0 to fire bursts"
+  },
+  {
+   "task": "task_0302",
+   "pass": false,
+   "turns": 12,
+   "runs": 4,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0303",
+   "pass": false,
+   "turns": 9,
+   "runs": 2,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Rain sub_emitter must target the Splash node"
+  },
+  {
+   "task": "task_0304",
+   "pass": false,
+   "turns": 4,
+   "runs": 1,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0305",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 11,
+   "test_ok": true,
+   "msg": "Splash explosiveness should be 1.0 to fire bursts"
+  },
+  {
+   "task": "task_0306",
+   "pass": false,
+   "turns": 9,
+   "runs": 3,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0307",
+   "pass": false,
+   "turns": 13,
+   "runs": 2,
+   "finished": true,
+   "tests": 5,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0308",
+   "pass": false,
+   "turns": 14,
+   "runs": 3,
+   "finished": true,
+   "tests": 6,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0309",
+   "pass": false,
+   "turns": 17,
+   "runs": 2,
+   "finished": false,
+   "tests": 12,
+   "test_ok": false,
+   "msg": "Splash explosiveness should be 1.0 to fire bursts"
+  },
+  {
+   "task": "task_0310",
+   "pass": false,
+   "turns": 19,
+   "runs": 5,
+   "finished": true,
+   "tests": 8,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0311",
+   "pass": false,
+   "turns": 18,
+   "runs": 5,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Rain emission box must span roughly 900 pixels to each side"
+  },
+  {
+   "task": "task_0312",
+   "pass": false,
+   "turns": 7,
+   "runs": 1,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Enable hide-on-contact collision mode for Rain"
+  },
+  {
+   "task": "task_0313",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 7,
+   "test_ok": null,
+   "msg": "Rain sub_emitter must target the Splash node"
+  },
+  {
+   "task": "task_0314",
+   "pass": false,
+   "turns": 11,
+   "runs": 3,
+   "finished": true,
+   "tests": 3,
+   "test_ok": true,
+   "msg": "Rain direction should be (0.08, 1.0, 0.0)"
+  },
+  {
+   "task": "task_0315",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 10,
+   "test_ok": false,
+   "msg": "Smoke trails should use 24 sections and 24 subdivisions for smooth ribbons"
+  },
+  {
+   "task": "task_0316",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 8,
+   "test_ok": false,
+   "msg": "Smoke needs -40 to 40 directional sway"
+  },
+  {
+   "task": "task_0317",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 7,
+   "test_ok": null,
+   "msg": "Smoke needs -25 to 25 directional sway"
+  },
+  {
+   "task": "task_0318",
+   "pass": false,
+   "turns": 13,
+   "runs": 5,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Last gradient color must fade to transparent"
+  },
+  {
+   "task": "task_0319",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 11,
+   "test_ok": false,
+   "msg": "SmokeStylized must use the smokelet texture for long streaks"
+  },
+  {
+   "task": "task_0320",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 10,
+   "test_ok": true,
+   "msg": "Smoke needs -10 to 10 directional sway"
+  },
+  {
+   "task": "task_0321",
+   "pass": false,
+   "turns": 11,
+   "runs": 3,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Smoke needs -35 to 35 directional sway"
+  },
+  {
+   "task": "task_0322",
+   "pass": false,
+   "turns": 16,
+   "runs": 4,
+   "finished": true,
+   "tests": 5,
+   "test_ok": true,
+   "msg": "Last gradient color must fade to transparent"
+  },
+  {
+   "task": "task_0323",
+   "pass": false,
+   "turns": 20,
+   "runs": 6,
+   "finished": false,
+   "tests": 7,
+   "test_ok": true,
+   "msg": "Last gradient color must fade to transparent"
+  },
+  {
+   "task": "task_0324",
+   "pass": false,
+   "turns": 20,
+   "runs": 7,
+   "finished": false,
+   "tests": 2,
+   "test_ok": false,
+   "msg": "Smoke needs -20 to 20 directional sway"
+  },
+  {
+   "task": "task_0325",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 9,
+   "test_ok": false,
+   "msg": "Smoke needs -25 to 25 directional sway"
+  },
+  {
+   "task": "task_0326",
+   "pass": false,
+   "turns": 9,
+   "runs": 2,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Smoke needs -18 to 18 directional sway"
+  },
+  {
+   "task": "task_0327",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 8,
+   "test_ok": false,
+   "msg": "Last gradient color must fade to transparent"
+  },
+  {
+   "task": "task_0328",
+   "pass": false,
+   "turns": 19,
+   "runs": 4,
+   "finished": true,
+   "tests": 8,
+   "test_ok": true,
+   "msg": "Smoke color must use a GradientTexture that warms near the fire and fades out"
+  },
+  {
+   "task": "task_0329",
+   "pass": false,
+   "turns": 20,
+   "runs": 4,
+   "finished": false,
+   "tests": 9,
+   "test_ok": false,
+   "msg": "Smoke needs -12 to 12 directional sway"
+  },
+  {
+   "task": "task_0330",
+   "pass": false,
+   "turns": 20,
+   "runs": 9,
+   "finished": false,
+   "tests": 0,
+   "test_ok": null,
+   "msg": "Smoke needs -20 to 20 directional sway"
+  },
+  {
+   "task": "task_0331",
+   "pass": false,
+   "turns": 12,
+   "runs": 4,
+   "finished": true,
+   "tests": 2,
+   "test_ok": true,
+   "msg": "Smoke needs -30 to 30 directional sway"
+  },
+  {
+   "task": "task_0332",
+   "pass": false,
+   "turns": 20,
+   "runs": 3,
+   "finished": false,
+   "tests": 8,
+   "test_ok": true,
+   "msg": "Smoke needs -25 to 25 directional sway"
+  },
+  {
+   "task": "task_0333",
+   "pass": false,
+   "turns": 15,
+   "runs": 3,
+   "finished": true,
+   "tests": 7,
+   "test_ok": true,
+   "msg": "Smoke needs -10 to 10 directional sway"
+  },
+  {
+   "task": "task_0334",
+   "pass": false,
+   "turns": 20,
+   "runs": 5,
+   "finished": false,
+   "tests": 4,
+   "test_ok": true,
+   "msg": "Smoke needs -35 to 35 directional sway"
+  }
+ ]
+}

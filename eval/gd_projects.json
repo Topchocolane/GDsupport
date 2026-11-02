@@ -1,0 +1,2992 @@
+[
+ {
+  "id": "platformer",
+  "kind": "2d",
+  "prompt": "Make a small 2D platformer. The main scene root is a Node2D named Main. It contains a CharacterBody2D named Player (with a CollisionShape2D and a visible Polygon2D or ColorRect body) standing on a StaticBody2D named Floor that has a wide RectangleShape2D collision. The player falls with gravity, walks left/right and jumps. Define the input actions in project.godot ([input] section) with keyboard events: move_left (A, Left), move_right (D, Right), jump (Space).",
+  "check": {
+   "frames": 150,
+   "inputs": [
+    {
+     "frame": 40,
+     "action": "move_right",
+     "pressed": true
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 35,
+     "node": "Player",
+     "prop": "position"
+    },
+    {
+     "frame": 140,
+     "node": "Player",
+     "prop": "position"
+    },
+    {
+     "frame": 35,
+     "node": "Player",
+     "prop": "is_on_floor()"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "inc",
+     "axis": "x"
+    }
+   ]
+  }
+ },
+ {
+  "id": "shooter2d",
+  "kind": "2d",
+  "prompt": "Make a top-down 2D shooter prototype. Main scene root: Node2D named Main with a script that has `var shots_fired: int = 0`. A CharacterBody2D named Player moves in 8 directions. Pressing the shoot action spawns a bullet (Area2D created in code or from a bullet scene) that flies upward and frees itself off screen; each shot increments Main.shots_fired. Allow at most one shot every 0.2 s. Define the input actions in project.godot ([input] section) with keyboard events: up (W), down (S), left (A), right (D), shoot (Space).",
+  "check": {
+   "frames": 120,
+   "inputs": [
+    {
+     "frame": 20,
+     "action": "shoot",
+     "pressed": true
+    },
+    {
+     "frame": 100,
+     "action": "shoot",
+     "pressed": false
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 10,
+     "node": ".",
+     "prop": "shots_fired"
+    },
+    {
+     "frame": 110,
+     "node": ".",
+     "prop": "shots_fired"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 0
+    },
+    {
+     "p": 1,
+     "op": "ge",
+     "v": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "pong",
+  "kind": "2d",
+  "prompt": "Make a Pong game. Main scene root: Node2D named Main. Nodes: LeftPaddle and RightPaddle (CharacterBody2D or AnimatableBody2D), Ball (CharacterBody2D) that starts moving by itself and bounces off the top/bottom walls and the paddles, and a Label named ScoreLabel. Main's script has `var left_score: int` and `var right_score: int`. The left paddle is player-controlled, the right paddle follows the ball. Define the input actions in project.godot ([input] section) with keyboard events: p1_up (W), p1_down (S).",
+  "check": {
+   "frames": 120,
+   "inputs": [
+    {
+     "frame": 20,
+     "action": "p1_down",
+     "pressed": true
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 5,
+     "node": "Ball",
+     "prop": "position"
+    },
+    {
+     "frame": 60,
+     "node": "Ball",
+     "prop": "position"
+    },
+    {
+     "frame": 15,
+     "node": "LeftPaddle",
+     "prop": "position"
+    },
+    {
+     "frame": 100,
+     "node": "LeftPaddle",
+     "prop": "position"
+    },
+    {
+     "frame": 5,
+     "node": ".",
+     "prop": "left_score"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "ne"
+    },
+    {
+     "a": 2,
+     "b": 3,
+     "op": "inc",
+     "axis": "y"
+    },
+    {
+     "p": 4,
+     "op": "eq",
+     "v": 0
+    }
+   ]
+  }
+ },
+ {
+  "id": "snake",
+  "kind": "2d",
+  "prompt": "Make a grid-based Snake game on a 20x15 grid of 32-px cells. Main scene root: Node2D named Main whose script has `var snake: Array[Vector2i]` (head first, starting length 3) and `var direction: Vector2i` starting as Vector2i.RIGHT. The snake advances one cell every 0.15 s, eats food to grow, and the game resets on hitting a wall or itself. Draw it with _draw() or ColorRect nodes. Use the built-in ui_up/ui_down/ui_left/ui_right actions.",
+  "check": {
+   "frames": 200,
+   "inputs": [
+    {
+     "frame": 60,
+     "action": "ui_down",
+     "pressed": true
+    },
+    {
+     "frame": 66,
+     "action": "ui_down",
+     "pressed": false
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 5,
+     "node": ".",
+     "prop": "snake.size()"
+    },
+    {
+     "frame": 5,
+     "node": ".",
+     "prop": "snake[0]"
+    },
+    {
+     "frame": 55,
+     "node": ".",
+     "prop": "snake[0]"
+    },
+    {
+     "frame": 120,
+     "node": ".",
+     "prop": "direction"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 3
+    },
+    {
+     "a": 1,
+     "b": 2,
+     "op": "inc",
+     "axis": "x"
+    },
+    {
+     "p": 3,
+     "op": "eq",
+     "v": "Vector2i(0, 1)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "breakout",
+  "kind": "2d",
+  "prompt": "Make a Breakout game. Main scene root: Node2D named Main whose script has `var bricks_left: int`. Build 5 rows x 8 columns of bricks in code (StaticBody2D with a collision shape and a ColorRect each) under a Node2D named Bricks, and set bricks_left to their count. A Paddle (CharacterBody2D) moves left/right; a Ball bounces and destroys bricks, decrementing bricks_left. Define the input actions in project.godot ([input] section) with keyboard events: move_left (A, Left), move_right (D, Right).",
+  "check": {
+   "frames": 90,
+   "inputs": [
+    {
+     "frame": 20,
+     "action": "move_left",
+     "pressed": true
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 5,
+     "node": ".",
+     "prop": "bricks_left"
+    },
+    {
+     "frame": 5,
+     "node": "Bricks",
+     "prop": "get_child_count()"
+    },
+    {
+     "frame": 15,
+     "node": "Paddle",
+     "prop": "position"
+    },
+    {
+     "frame": 80,
+     "node": "Paddle",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 40
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": 40
+    },
+    {
+     "a": 2,
+     "b": 3,
+     "op": "dec",
+     "axis": "x"
+    }
+   ]
+  }
+ },
+ {
+  "id": "clicker",
+  "kind": "2d",
+  "prompt": "Make a clicker game UI. Main scene root: Control named Main (full rect) whose script has `var score: int = 0` and `var per_click: int = 1`. Children: a Button named ClickButton (+per_click to score when pressed), a Button named UpgradeButton (costs 10 score, doubles per_click, disabled while unaffordable), and a Label named ScoreLabel always showing \"Score: <score>\".",
+  "check": {
+   "frames": 60,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": "ClickButton",
+     "method": "emit_signal",
+     "args": [
+      "pressed"
+     ]
+    },
+    {
+     "frame": 11,
+     "node": "ClickButton",
+     "method": "emit_signal",
+     "args": [
+      "pressed"
+     ]
+    }
+   ],
+   "probes": [
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "score"
+    },
+    {
+     "frame": 30,
+     "node": "ScoreLabel",
+     "prop": "text"
+    },
+    {
+     "frame": 30,
+     "node": "UpgradeButton",
+     "prop": "disabled"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 2
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": "\"Score: 2\""
+    },
+    {
+     "p": 2,
+     "op": "eq",
+     "v": true
+    }
+   ]
+  }
+ },
+ {
+  "id": "countdown",
+  "kind": "2d",
+  "prompt": "Make a countdown timer screen. Main scene root: Control named Main whose script has `var time_left: float = 10.0`, counting down in real time and stopping at 0, with a Label named TimeLabel showing the remaining seconds with one decimal, and a Button named RestartButton that resets it to 10.",
+  "check": {
+   "frames": 150,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 5,
+     "node": ".",
+     "prop": "time_left"
+    },
+    {
+     "frame": 140,
+     "node": ".",
+     "prop": "time_left"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "dec",
+     "axis": null
+    },
+    {
+     "p": 1,
+     "op": "ge",
+     "v": 7.0
+    }
+   ]
+  }
+ },
+ {
+  "id": "health",
+  "kind": "2d",
+  "prompt": "Make a health system demo. Main scene root: Node2D named Main. A Node2D named Player has a script with `var max_health: int = 100`, `var health: int = 100`, `signal health_changed(new_health: int)`, `signal died`, and `func take_damage(amount: int) -> void` that clamps health at 0 and emits died once at 0. A ProgressBar named HealthBar (child of Main) updates from health_changed.",
+  "check": {
+   "frames": 60,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": "Player",
+     "method": "take_damage",
+     "args": [
+      30
+     ]
+    }
+   ],
+   "probes": [
+    {
+     "frame": 30,
+     "node": "Player",
+     "prop": "health"
+    },
+    {
+     "frame": 30,
+     "node": "HealthBar",
+     "prop": "value"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 70
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": 70.0
+    }
+   ]
+  }
+ },
+ {
+  "id": "inventory",
+  "kind": "2d",
+  "prompt": "Make an inventory system. Main scene root: Control named Main whose script has `var items: Dictionary = {}` (item name -> count), `func add_item(item_name: String, count: int) -> void`, `func remove_item(item_name: String, count: int) -> bool` (false if not enough), and an ItemList named ItemsList that shows \"name x count\" lines and refreshes after every change.",
+  "check": {
+   "frames": 60,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": ".",
+     "method": "add_item",
+     "args": [
+      "potion",
+      2
+     ]
+    },
+    {
+     "frame": 11,
+     "node": ".",
+     "method": "add_item",
+     "args": [
+      "potion",
+      3
+     ]
+    },
+    {
+     "frame": 12,
+     "node": ".",
+     "method": "remove_item",
+     "args": [
+      "potion",
+      1
+     ]
+    }
+   ],
+   "probes": [
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "items"
+    },
+    {
+     "frame": 30,
+     "node": "ItemsList",
+     "prop": "item_count"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": "{\n\"potion\": 4\n}"
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "patrol",
+  "kind": "2d",
+  "prompt": "Make an enemy patrol demo. Main scene root: Node2D named Main. A CharacterBody2D named Enemy starts at x=100 and patrols between x=100 and x=400 at 120 px/s using a small state machine (states PATROL_RIGHT, PATROL_LEFT, WAIT for 0.5 s at each end). Expose `var state: String` on the Enemy.",
+  "check": {
+   "frames": 300,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 5,
+     "node": "Enemy",
+     "prop": "position"
+    },
+    {
+     "frame": 60,
+     "node": "Enemy",
+     "prop": "position"
+    },
+    {
+     "frame": 290,
+     "node": "Enemy",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "inc",
+     "axis": "x"
+    },
+    {
+     "p": 2,
+     "op": "ge_x",
+     "v": 90
+    },
+    {
+     "p": 2,
+     "op": "le_x",
+     "v": 410
+    }
+   ]
+  }
+ },
+ {
+  "id": "saveload",
+  "kind": "2d",
+  "prompt": "Make a save/load demo. Main scene root: Node named Main whose script has `var high_score: int = 0`, `func save_game() -> void` writing {\"high_score\": high_score} as JSON to user://save.json, and `func load_game() -> void` reading it back (keeping 0 if the file is missing or invalid).",
+  "check": {
+   "frames": 40,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 5,
+     "node": ".",
+     "method": "set",
+     "args": [
+      "high_score",
+      42
+     ]
+    },
+    {
+     "frame": 6,
+     "node": ".",
+     "method": "save_game",
+     "args": []
+    },
+    {
+     "frame": 7,
+     "node": ".",
+     "method": "set",
+     "args": [
+      "high_score",
+      0
+     ]
+    },
+    {
+     "frame": 8,
+     "node": ".",
+     "method": "load_game",
+     "args": []
+    }
+   ],
+   "probes": [
+    {
+     "frame": 20,
+     "node": ".",
+     "prop": "high_score"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 42
+    }
+   ]
+  }
+ },
+ {
+  "id": "menu",
+  "kind": "2d",
+  "prompt": "Make a two-scene game shell. The main scene res://menu.tscn has a Control root named Menu with a Button named StartButton and a Button named QuitButton. Pressing StartButton changes the scene to res://game.tscn, whose root is a Node2D named Game showing a Label \"Playing\". QuitButton quits the game.",
+  "check": {
+   "frames": 60,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": "StartButton",
+     "method": "emit_signal",
+     "args": [
+      "pressed"
+     ]
+    }
+   ],
+   "probes": [
+    {
+     "frame": 5,
+     "node": ".",
+     "prop": "name"
+    },
+    {
+     "frame": 50,
+     "node": ".",
+     "prop": "name"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": "&\"Menu\""
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": "&\"Game\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "fps_move",
+  "kind": "3d",
+  "prompt": "Make a 3D first-person controller. Main scene root: Node3D named Main with a WorldEnvironment, a DirectionalLight3D, a StaticBody3D named Floor (40x40 BoxShape3D collision plus a MeshInstance3D), and a CharacterBody3D named Player (CapsuleShape3D) with a Camera3D child named Head at eye height. The player walks with gravity relative to where it faces (forward is -Z) and the mouse rotates Player (yaw) and Head (pitch). Define the input actions in project.godot ([input] section) with keyboard events: move_forward (W), move_back (S), move_left (A), move_right (D), jump (Space).",
+  "check": {
+   "frames": 150,
+   "inputs": [
+    {
+     "frame": 40,
+     "action": "move_forward",
+     "pressed": true
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 35,
+     "node": "Player",
+     "prop": "position"
+    },
+    {
+     "frame": 140,
+     "node": "Player",
+     "prop": "position"
+    },
+    {
+     "frame": 5,
+     "node": "Head",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "dec",
+     "axis": "z"
+    },
+    {
+     "p": 2,
+     "op": "found"
+    }
+   ]
+  }
+ },
+ {
+  "id": "spin_cube",
+  "kind": "3d",
+  "prompt": "Make a 3D showcase scene. Main scene root: Node3D named Main with a MeshInstance3D named Cube (BoxMesh with a StandardMaterial3D) that spins around Y at 1 rad/s, a Camera3D named Camera orbiting the cube at radius 6 (one turn every 10 s) always looking at it, and an OmniLight3D.",
+  "check": {
+   "frames": 120,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 5,
+     "node": "Cube",
+     "prop": "rotation"
+    },
+    {
+     "frame": 100,
+     "node": "Cube",
+     "prop": "rotation"
+    },
+    {
+     "frame": 5,
+     "node": "Camera",
+     "prop": "position"
+    },
+    {
+     "frame": 100,
+     "node": "Camera",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "ne"
+    },
+    {
+     "a": 2,
+     "b": 3,
+     "op": "ne"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ball_drop",
+  "kind": "3d",
+  "prompt": "Make a 3D physics demo. Main scene root: Node3D named Main. A RigidBody3D named Ball (SphereShape3D, SphereMesh) starts at y=5 above a StaticBody3D named Floor (large BoxShape3D at y=0) and falls and bounces (physics material bounce 0.5). Add a Camera3D and a DirectionalLight3D. Pressing the kick action applies an impulse along +X to the ball. Define the input actions in project.godot ([input] section) with keyboard events: kick (K).",
+  "check": {
+   "frames": 150,
+   "inputs": [
+    {
+     "frame": 90,
+     "action": "kick",
+     "pressed": true
+    },
+    {
+     "frame": 92,
+     "action": "kick",
+     "pressed": false
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 2,
+     "node": "Ball",
+     "prop": "position"
+    },
+    {
+     "frame": 80,
+     "node": "Ball",
+     "prop": "position"
+    },
+    {
+     "frame": 145,
+     "node": "Ball",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "dec",
+     "axis": "y"
+    },
+    {
+     "p": 1,
+     "op": "ge_y",
+     "v": 0.0
+    },
+    {
+     "a": 1,
+     "b": 2,
+     "op": "inc",
+     "axis": "x"
+    }
+   ]
+  }
+ },
+ {
+  "id": "coins3d",
+  "kind": "3d",
+  "prompt": "Make a 3D coin-collection level. Main scene root: Node3D named Main whose script has `var coins_total: int` and `var coins_collected: int = 0`. Spawn 5 coins in code under a Node3D named Coins: each coin is an Area3D with a CylinderShape3D, a thin CylinderMesh, and spins around Y. Set coins_total to the number spawned. When a body in the group \"player\" enters a coin, it disappears and coins_collected increases. Include a CharacterBody3D Player in group \"player\", a floor, a camera and a light.",
+  "check": {
+   "frames": 60,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 10,
+     "node": ".",
+     "prop": "coins_total"
+    },
+    {
+     "frame": 10,
+     "node": "Coins",
+     "prop": "get_child_count()"
+    },
+    {
+     "frame": 10,
+     "node": ".",
+     "prop": "coins_collected"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 5
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": 5
+    },
+    {
+     "p": 2,
+     "op": "eq",
+     "v": 0
+    }
+   ]
+  }
+ },
+ {
+  "id": "daynight",
+  "kind": "3d",
+  "prompt": "Make a 3D day/night cycle. Main scene root: Node3D named Main whose script has `var time_of_day: float` in hours (0-24, starting at 6.0) advancing 1 hour per second. A DirectionalLight3D named Sun rotates around X with the time and dims at night; a WorldEnvironment with a ProceduralSkyMaterial sky; some ground and boxes to look at; a camera.",
+  "check": {
+   "frames": 150,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 5,
+     "node": ".",
+     "prop": "time_of_day"
+    },
+    {
+     "frame": 140,
+     "node": ".",
+     "prop": "time_of_day"
+    },
+    {
+     "frame": 5,
+     "node": "Sun",
+     "prop": "rotation"
+    },
+    {
+     "frame": 140,
+     "node": "Sun",
+     "prop": "rotation"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "inc",
+     "axis": null
+    },
+    {
+     "a": 2,
+     "b": 3,
+     "op": "ne"
+    }
+   ]
+  }
+ },
+ {
+  "id": "spawner3d",
+  "kind": "3d",
+  "prompt": "Make a 3D enemy spawner. Main scene root: Node3D named Main whose script has `var spawned: int = 0`. Every 0.5 s it spawns an enemy (a CharacterBody3D with a capsule mesh and collision, created in code or from res://enemy.tscn) at a random point on a circle of radius 10 under a Node3D named Enemies; enemies walk toward the origin. Cap at 20 enemies. Include a floor, camera and light.",
+  "check": {
+   "frames": 200,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 190,
+     "node": ".",
+     "prop": "spawned"
+    },
+    {
+     "frame": 190,
+     "node": "Enemies",
+     "prop": "get_child_count()"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "ge",
+     "v": 5
+    },
+    {
+     "p": 1,
+     "op": "ge",
+     "v": 5
+    }
+   ]
+  }
+ },
+ {
+  "id": "cam_follow",
+  "kind": "3d",
+  "prompt": "Make a third-person 3D follow camera. Main scene root: Node3D named Main with a CharacterBody3D named Player (box mesh, collision, gravity) on a floor, and a Camera3D named Camera that smoothly follows the player from an offset of (0, 4, 8) and looks at it. Define the input actions in project.godot ([input] section) with keyboard events: move_left (A), move_right (D), move_forward (W), move_back (S).",
+  "check": {
+   "frames": 150,
+   "inputs": [
+    {
+     "frame": 30,
+     "action": "move_right",
+     "pressed": true
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 25,
+     "node": "Player",
+     "prop": "position"
+    },
+    {
+     "frame": 140,
+     "node": "Player",
+     "prop": "position"
+    },
+    {
+     "frame": 25,
+     "node": "Camera",
+     "prop": "position"
+    },
+    {
+     "frame": 140,
+     "node": "Camera",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "inc",
+     "axis": "x"
+    },
+    {
+     "a": 2,
+     "b": 3,
+     "op": "inc",
+     "axis": "x"
+    }
+   ]
+  }
+ },
+ {
+  "id": "grid3d",
+  "kind": "3d",
+  "prompt": "Make a 3D procedural tile grid. Main scene root: Node3D named Main whose script has `var tile_count: int`. In _ready it builds a 10x10 grid of MeshInstance3D tiles (1x1 PlaneMesh or thin BoxMesh, 0.1 gap) under a Node3D named Grid, colouring tiles in a checkerboard with two StandardMaterial3D materials, and sets tile_count. Add a camera looking down at 45 degrees and a light.",
+  "check": {
+   "frames": 30,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 10,
+     "node": ".",
+     "prop": "tile_count"
+    },
+    {
+     "frame": 10,
+     "node": "Grid",
+     "prop": "get_child_count()"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 100
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": 100
+    }
+   ]
+  }
+ },
+ {
+  "id": "projectile3d",
+  "kind": "3d",
+  "prompt": "Make a 3D turret. Main scene root: Node3D named Main whose script has `var shots_fired: int = 0`. A Node3D named Turret aims along -Z. The shoot action fires a projectile (Area3D with a small sphere mesh) from the turret that moves forward at 20 m/s and frees itself after 2 s; at most 4 shots per second; each shot increments shots_fired. Include a camera and light. Define the input actions in project.godot ([input] section) with keyboard events: shoot (Space).",
+  "check": {
+   "frames": 120,
+   "inputs": [
+    {
+     "frame": 20,
+     "action": "shoot",
+     "pressed": true
+    },
+    {
+     "frame": 90,
+     "action": "shoot",
+     "pressed": false
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 10,
+     "node": ".",
+     "prop": "shots_fired"
+    },
+    {
+     "frame": 110,
+     "node": ".",
+     "prop": "shots_fired"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 0
+    },
+    {
+     "p": 1,
+     "op": "ge",
+     "v": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "vehicle3d",
+  "kind": "3d",
+  "prompt": "Make a simple 3D arcade car. Main scene root: Node3D named Main with a floor and a CharacterBody3D named Car (box body mesh, collision) with `var speed: float`. Accelerate/brake changes speed (max 20, friction slows it), steering rotates the car around Y only while moving, and the car moves along its local -Z. A Camera3D follows behind. Define the input actions in project.godot ([input] section) with keyboard events: accelerate (W, Up), brake (S, Down), steer_left (A, Left), steer_right (D, Right).",
+  "check": {
+   "frames": 150,
+   "inputs": [
+    {
+     "frame": 20,
+     "action": "accelerate",
+     "pressed": true
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 10,
+     "node": "Car",
+     "prop": "speed"
+    },
+    {
+     "frame": 120,
+     "node": "Car",
+     "prop": "speed"
+    },
+    {
+     "frame": 15,
+     "node": "Car",
+     "prop": "position"
+    },
+    {
+     "frame": 140,
+     "node": "Car",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "inc",
+     "axis": null
+    },
+    {
+     "a": 2,
+     "b": 3,
+     "op": "ne"
+    }
+   ]
+  }
+ },
+ {
+  "id": "doors3d",
+  "kind": "3d",
+  "prompt": "Make a 3D interactable door. Main scene root: Node3D named Main. A Node3D named Door (hinge) holds a door mesh and collision; it has `var is_open: bool = false` and `func toggle() -> void` that tweens its rotation.y between 0 and 90 degrees over 0.5 s. Pressing the interact action toggles the door. Add floor, walls, camera and light. Define the input actions in project.godot ([input] section) with keyboard events: interact (E).",
+  "check": {
+   "frames": 120,
+   "inputs": [
+    {
+     "frame": 20,
+     "action": "interact",
+     "pressed": true
+    },
+    {
+     "frame": 22,
+     "action": "interact",
+     "pressed": false
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 10,
+     "node": "Door",
+     "prop": "is_open"
+    },
+    {
+     "frame": 100,
+     "node": "Door",
+     "prop": "is_open"
+    },
+    {
+     "frame": 10,
+     "node": "Door",
+     "prop": "rotation"
+    },
+    {
+     "frame": 100,
+     "node": "Door",
+     "prop": "rotation"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": false
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": true
+    },
+    {
+     "a": 2,
+     "b": 3,
+     "op": "ne"
+    }
+   ]
+  }
+ },
+ {
+  "id": "waves3d",
+  "kind": "3d",
+  "prompt": "Make a 3D wave survival manager. Main scene root: Node3D named Main whose script has `var wave: int = 0`, `var enemies_alive: int = 0`, `func start_next_wave() -> void` (wave += 1, spawns wave * 3 enemies under a Node3D named Enemies and sets enemies_alive), and starts wave 1 automatically after 1 second. Enemies are simple MeshInstance3D-based Node3D scenes created in code. Include floor, camera and light.",
+  "check": {
+   "frames": 120,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "wave"
+    },
+    {
+     "frame": 110,
+     "node": ".",
+     "prop": "wave"
+    },
+    {
+     "frame": 110,
+     "node": ".",
+     "prop": "enemies_alive"
+    },
+    {
+     "frame": 110,
+     "node": "Enemies",
+     "prop": "get_child_count()"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 0
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": 1
+    },
+    {
+     "p": 2,
+     "op": "eq",
+     "v": 3
+    },
+    {
+     "p": 3,
+     "op": "eq",
+     "v": 3
+    }
+   ]
+  }
+ },
+ {
+  "id": "tween_move",
+  "kind": "2d",
+  "prompt": "Make a tween demo. Main scene root: Node2D named Main. A child Node2D named Box (with a ColorRect child so it is visible) starts at position (100, 200). Main's script has `func move_to(x: float, y: float) -> void` that tweens Box.position to (x, y) over 0.5 seconds, killing any tween still running.",
+  "check": {
+   "frames": 80,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": ".",
+     "method": "move_to",
+     "args": [
+      300,
+      200
+     ]
+    }
+   ],
+   "probes": [
+    {
+     "frame": 5,
+     "node": "Box",
+     "prop": "position"
+    },
+    {
+     "frame": 14,
+     "node": "Box",
+     "prop": "position"
+    },
+    {
+     "frame": 70,
+     "node": "Box",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "le_x",
+     "v": 100.5
+    },
+    {
+     "p": 1,
+     "op": "le_x",
+     "v": 299
+    },
+    {
+     "p": 2,
+     "op": "ge_x",
+     "v": 299.5
+    },
+    {
+     "p": 2,
+     "op": "le_x",
+     "v": 300.5
+    }
+   ]
+  }
+ },
+ {
+  "id": "timer_spawn2d",
+  "kind": "2d",
+  "prompt": "Make a timed spawner. Main scene root: Node2D named Main whose script has `var spawned: int = 0`. A child Timer named SpawnTimer (wait_time 0.25, autostart) adds a 16x16 ColorRect at a random position inside 640x360 under a child Node2D named Spawned on every timeout and increments spawned. Stop spawning after 20.",
+  "check": {
+   "frames": 120,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 110,
+     "node": ".",
+     "prop": "spawned"
+    },
+    {
+     "frame": 110,
+     "node": "Spawned",
+     "prop": "get_child_count()"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "ge",
+     "v": 5
+    },
+    {
+     "p": 0,
+     "op": "le",
+     "v": 20
+    },
+    {
+     "p": 1,
+     "op": "ge",
+     "v": 5
+    }
+   ]
+  }
+ },
+ {
+  "id": "dialogue",
+  "kind": "2d",
+  "prompt": "Make a dialogue box. Main scene root: Control named Main whose script has `var lines: Array[String] = [\"Hello, traveler.\", \"The bridge is out.\", \"Take the river path.\"]`, `var index: int = 0`, `var finished: bool = false` and `func advance() -> void`. A child Label named DialogueLabel shows lines[index] from the start. advance() moves to the next line; calling it on the last line sets finished to true and hides DialogueLabel. The ui_accept action also calls advance().",
+  "check": {
+   "frames": 40,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": ".",
+     "method": "advance",
+     "args": []
+    },
+    {
+     "frame": 11,
+     "node": ".",
+     "method": "advance",
+     "args": []
+    },
+    {
+     "frame": 20,
+     "node": ".",
+     "method": "advance",
+     "args": []
+    }
+   ],
+   "probes": [
+    {
+     "frame": 5,
+     "node": "DialogueLabel",
+     "prop": "text"
+    },
+    {
+     "frame": 15,
+     "node": "DialogueLabel",
+     "prop": "text"
+    },
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "finished"
+    },
+    {
+     "frame": 30,
+     "node": "DialogueLabel",
+     "prop": "visible"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": "\"Hello, traveler.\""
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": "\"Take the river path.\""
+    },
+    {
+     "p": 2,
+     "op": "eq",
+     "v": true
+    },
+    {
+     "p": 3,
+     "op": "eq",
+     "v": false
+    }
+   ]
+  }
+ },
+ {
+  "id": "stamina",
+  "kind": "2d",
+  "prompt": "Make a stamina system. Main scene root: Node2D named Main. A child Node2D named Player has a script with `var stamina: float = 100.0`: while the sprint action is held stamina drains at 25 per second, otherwise it regenerates at 10 per second, always clamped to 0..100. A child ProgressBar named StaminaBar shows it. Define the input actions in project.godot ([input] section) with keyboard events: sprint (Shift).",
+  "check": {
+   "frames": 150,
+   "inputs": [
+    {
+     "frame": 10,
+     "action": "sprint",
+     "pressed": true
+    },
+    {
+     "frame": 70,
+     "action": "sprint",
+     "pressed": false
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 5,
+     "node": "Player",
+     "prop": "stamina"
+    },
+    {
+     "frame": 70,
+     "node": "Player",
+     "prop": "stamina"
+    },
+    {
+     "frame": 140,
+     "node": "Player",
+     "prop": "stamina"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "ge",
+     "v": 99.9
+    },
+    {
+     "p": 1,
+     "op": "le",
+     "v": 80
+    },
+    {
+     "p": 1,
+     "op": "ge",
+     "v": 70
+    },
+    {
+     "a": 1,
+     "b": 2,
+     "op": "inc",
+     "axis": null
+    }
+   ]
+  }
+ },
+ {
+  "id": "turns",
+  "kind": "2d",
+  "prompt": "Make a two-player turn manager. Main scene root: Node named Main whose script has `var turn: int = 1`, `var current_player: int = 0` (0 or 1), `signal turn_started(player: int)` and `func end_turn() -> void`, which switches current_player and increases turn each time play returns to player 0, then emits turn_started. A child Label named TurnLabel shows \"Turn <turn> - Player <current_player + 1>\".",
+  "check": {
+   "frames": 40,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": ".",
+     "method": "end_turn",
+     "args": []
+    },
+    {
+     "frame": 11,
+     "node": ".",
+     "method": "end_turn",
+     "args": []
+    },
+    {
+     "frame": 12,
+     "node": ".",
+     "method": "end_turn",
+     "args": []
+    }
+   ],
+   "probes": [
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "turn"
+    },
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "current_player"
+    },
+    {
+     "frame": 30,
+     "node": "TurnLabel",
+     "prop": "text"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 2
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": 1
+    },
+    {
+     "p": 2,
+     "op": "eq",
+     "v": "\"Turn 2 - Player 2\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "combo",
+  "kind": "2d",
+  "prompt": "Make a combo scorer. Main scene root: Node named Main whose script has `var score: int = 0`, `var combo: int = 0`, `func hit() -> void` (combo += 1, then score += 10 * combo) and `func miss() -> void` (combo = 0). A child Label named ComboLabel shows \"x<combo>\" and is hidden while combo is 0.",
+  "check": {
+   "frames": 40,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": ".",
+     "method": "hit",
+     "args": []
+    },
+    {
+     "frame": 11,
+     "node": ".",
+     "method": "hit",
+     "args": []
+    },
+    {
+     "frame": 12,
+     "node": ".",
+     "method": "hit",
+     "args": []
+    },
+    {
+     "frame": 13,
+     "node": ".",
+     "method": "miss",
+     "args": []
+    },
+    {
+     "frame": 14,
+     "node": ".",
+     "method": "hit",
+     "args": []
+    }
+   ],
+   "probes": [
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "score"
+    },
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "combo"
+    },
+    {
+     "frame": 30,
+     "node": "ComboLabel",
+     "prop": "text"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 70
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": 1
+    },
+    {
+     "p": 2,
+     "op": "eq",
+     "v": "\"x1\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "scroller",
+  "kind": "2d",
+  "prompt": "Make an endless scrolling background. Main scene root: Node2D named Main. A child Node2D named Background holds two 1280x720 ColorRects side by side and scrolls left at 100 px/s; when its x reaches -1280 it jumps back by +1280 so the loop is seamless.",
+  "check": {
+   "frames": 80,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 5,
+     "node": "Background",
+     "prop": "position"
+    },
+    {
+     "frame": 65,
+     "node": "Background",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "dec",
+     "axis": "x"
+    },
+    {
+     "p": 1,
+     "op": "ge_x",
+     "v": -1280
+    }
+   ]
+  }
+ },
+ {
+  "id": "chaser",
+  "kind": "2d",
+  "prompt": "Make a chasing enemy. Main scene root: Node2D named Main. A child Node2D named Target sits at (500, 400). A child CharacterBody2D named Enemy starts at (100, 100) and moves straight toward Target at 150 px/s with move_and_slide, stopping when within 5 px.",
+  "check": {
+   "frames": 260,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 5,
+     "node": "Enemy",
+     "prop": "position"
+    },
+    {
+     "frame": 60,
+     "node": "Enemy",
+     "prop": "position"
+    },
+    {
+     "frame": 250,
+     "node": "Enemy",
+     "prop": "position.distance_to(Vector2(500, 400))"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "inc",
+     "axis": "x"
+    },
+    {
+     "a": 0,
+     "b": 1,
+     "op": "inc",
+     "axis": "y"
+    },
+    {
+     "p": 2,
+     "op": "le",
+     "v": 20
+    }
+   ]
+  }
+ },
+ {
+  "id": "shop",
+  "kind": "2d",
+  "prompt": "Make a shop. Main scene root: Control named Main whose script has `var gold: int = 50`, `var prices: Dictionary = {\"sword\": 30, \"shield\": 25, \"potion\": 5}`, `var owned: Array[String] = []` and `func buy(item: String) -> bool` that returns false (changing nothing) for unknown or unaffordable items, otherwise subtracts the price, appends the item and returns true. A child Label named GoldLabel shows \"Gold: <gold>\".",
+  "check": {
+   "frames": 40,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": ".",
+     "method": "buy",
+     "args": [
+      "sword"
+     ]
+    },
+    {
+     "frame": 11,
+     "node": ".",
+     "method": "buy",
+     "args": [
+      "shield"
+     ]
+    },
+    {
+     "frame": 12,
+     "node": ".",
+     "method": "buy",
+     "args": [
+      "potion"
+     ]
+    }
+   ],
+   "probes": [
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "gold"
+    },
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "owned.size()"
+    },
+    {
+     "frame": 30,
+     "node": "GoldLabel",
+     "prop": "text"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 15
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": 2
+    },
+    {
+     "p": 2,
+     "op": "eq",
+     "v": "\"Gold: 15\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "bullet_ring",
+  "kind": "2d",
+  "prompt": "Make a bullet-hell emitter. Main scene root: Node2D named Main whose script has `var waves_fired: int = 0`. 0.5 s after start and then every 1 s, it fires a ring of 12 bullets from (320, 180) under a child Node2D named Bullets; each bullet is an Area2D (small circle collision + visual) moving outward at 150 px/s that frees itself after 2 s. Each ring increments waves_fired.",
+  "check": {
+   "frames": 150,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 20,
+     "node": ".",
+     "prop": "waves_fired"
+    },
+    {
+     "frame": 140,
+     "node": ".",
+     "prop": "waves_fired"
+    },
+    {
+     "frame": 140,
+     "node": "Bullets",
+     "prop": "get_child_count()"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 0
+    },
+    {
+     "p": 1,
+     "op": "ge",
+     "v": 2
+    },
+    {
+     "p": 2,
+     "op": "ge",
+     "v": 12
+    }
+   ]
+  }
+ },
+ {
+  "id": "pause",
+  "kind": "2d",
+  "prompt": "Make a pause system. Main scene root: Node2D named Main (process_mode Always) that toggles get_tree().paused on the pause action and shows/hides a child CanvasLayer named PauseMenu (with a \"Paused\" Label), hidden at start. A child Node2D named Mover moves right at 100 px/s and stops while paused. Define the input actions in project.godot ([input] section) with keyboard events: pause (P, Escape).",
+  "check": {
+   "frames": 140,
+   "inputs": [
+    {
+     "frame": 60,
+     "action": "pause",
+     "pressed": true
+    },
+    {
+     "frame": 62,
+     "action": "pause",
+     "pressed": false
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 5,
+     "node": "PauseMenu",
+     "prop": "visible"
+    },
+    {
+     "frame": 5,
+     "node": "Mover",
+     "prop": "position"
+    },
+    {
+     "frame": 50,
+     "node": "Mover",
+     "prop": "position"
+    },
+    {
+     "frame": 100,
+     "node": ".",
+     "prop": "get_tree().paused"
+    },
+    {
+     "frame": 100,
+     "node": "PauseMenu",
+     "prop": "visible"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": false
+    },
+    {
+     "a": 1,
+     "b": 2,
+     "op": "inc",
+     "axis": "x"
+    },
+    {
+     "p": 3,
+     "op": "eq",
+     "v": true
+    },
+    {
+     "p": 4,
+     "op": "eq",
+     "v": true
+    }
+   ]
+  }
+ },
+ {
+  "id": "camera2d",
+  "kind": "2d",
+  "prompt": "Make a side-scrolling camera. Main scene root: Node2D named Main with a StaticBody2D floor, a CharacterBody2D named Player that walks with gravity, and a Camera2D named Camera that is a direct child of Main (not of the Player) and follows the player's position every frame with smoothing. Define the input actions in project.godot ([input] section) with keyboard events: move_left (A), move_right (D).",
+  "check": {
+   "frames": 150,
+   "inputs": [
+    {
+     "frame": 30,
+     "action": "move_right",
+     "pressed": true
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 25,
+     "node": "Player",
+     "prop": "position"
+    },
+    {
+     "frame": 140,
+     "node": "Player",
+     "prop": "position"
+    },
+    {
+     "frame": 25,
+     "node": "Camera",
+     "prop": "position"
+    },
+    {
+     "frame": 140,
+     "node": "Camera",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "inc",
+     "axis": "x"
+    },
+    {
+     "a": 2,
+     "b": 3,
+     "op": "inc",
+     "axis": "x"
+    }
+   ]
+  }
+ },
+ {
+  "id": "event_bus",
+  "kind": "2d",
+  "prompt": "Make a global event bus. Register an autoload named Events (res://events.gd, extends Node) declaring `signal coin_collected(value: int)`. Main scene root: Node2D named Main whose script has `var total: int = 0` and adds each emitted value to total. A child Node2D named Coin has `func collect() -> void` that emits Events.coin_collected with 5.",
+  "check": {
+   "frames": 40,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": "Coin",
+     "method": "collect",
+     "args": []
+    },
+    {
+     "frame": 11,
+     "node": "Coin",
+     "method": "collect",
+     "args": []
+    }
+   ],
+   "probes": [
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "total"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 10
+    }
+   ]
+  }
+ },
+ {
+  "id": "traffic_light",
+  "kind": "2d",
+  "prompt": "Make a traffic light. Main scene root: Node2D named Main. A child Node2D named TrafficLight has `var state: String = \"GREEN\"` and cycles GREEN for 1.0 s, then YELLOW for 0.5 s, then RED for 1.0 s, then GREEN again, drawing a coloured circle for the current state.",
+  "check": {
+   "frames": 130,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 30,
+     "node": "TrafficLight",
+     "prop": "state"
+    },
+    {
+     "frame": 75,
+     "node": "TrafficLight",
+     "prop": "state"
+    },
+    {
+     "frame": 120,
+     "node": "TrafficLight",
+     "prop": "state"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": "\"GREEN\""
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": "\"YELLOW\""
+    },
+    {
+     "p": 2,
+     "op": "eq",
+     "v": "\"RED\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "resource_item",
+  "kind": "2d",
+  "prompt": "Make a custom Resource. res://item_data.gd declares `class_name ItemData extends Resource` with `@export var item_name: String` and `@export var damage: int`. Main scene root: Node named Main whose script has `var weapon: ItemData`, created in _ready with item_name \"Bronze Sword\" and damage 12, and `func upgrade() -> void` that adds 3 damage.",
+  "check": {
+   "frames": 40,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": ".",
+     "method": "upgrade",
+     "args": []
+    },
+    {
+     "frame": 11,
+     "node": ".",
+     "method": "upgrade",
+     "args": []
+    }
+   ],
+   "probes": [
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "weapon.damage"
+    },
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "weapon.item_name"
+    },
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "weapon.get_script().resource_path"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 18
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": "\"Bronze Sword\""
+    },
+    {
+     "p": 2,
+     "op": "eq",
+     "v": "\"res://item_data.gd\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "dice",
+  "kind": "2d",
+  "prompt": "Make a dice roller. Main scene root: Control named Main whose script has `var rolls: Array[int] = []`, `func roll() -> int` (uniform 1..6, appended to rolls) and `func roll_many(n: int) -> void`. A child Label named LastRoll shows the latest roll and a child Button named RollButton rolls once.",
+  "check": {
+   "frames": 40,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": ".",
+     "method": "roll_many",
+     "args": [
+      20
+     ]
+    }
+   ],
+   "probes": [
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "rolls.size()"
+    },
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "rolls.min()"
+    },
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "rolls.max()"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 20
+    },
+    {
+     "p": 1,
+     "op": "ge",
+     "v": 1
+    },
+    {
+     "p": 2,
+     "op": "le",
+     "v": 6
+    }
+   ]
+  }
+ },
+ {
+  "id": "undo",
+  "kind": "2d",
+  "prompt": "Make an undo stack. Main scene root: Node named Main whose script has `var value: int = 0`, `var history: Array[int] = []`, `func apply(delta: int) -> void` (push the current value onto history, then add delta) and `func undo() -> void` (restore the last pushed value; do nothing when history is empty).",
+  "check": {
+   "frames": 40,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": ".",
+     "method": "apply",
+     "args": [
+      5
+     ]
+    },
+    {
+     "frame": 11,
+     "node": ".",
+     "method": "apply",
+     "args": [
+      3
+     ]
+    },
+    {
+     "frame": 12,
+     "node": ".",
+     "method": "undo",
+     "args": []
+    }
+   ],
+   "probes": [
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "value"
+    },
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "history.size()"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 5
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "volume_slider",
+  "kind": "2d",
+  "prompt": "Make a settings screen. Main scene root: Control named Main whose script has `var volume: float = 80.0`. A child HSlider named VolumeSlider (0..100, starts at 80) updates volume through its value_changed signal, and a child Label named VolumeLabel shows \"Volume: <volume as integer>\".",
+  "check": {
+   "frames": 40,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": "VolumeSlider",
+     "method": "set_value",
+     "args": [
+      40
+     ]
+    }
+   ],
+   "probes": [
+    {
+     "frame": 5,
+     "node": "VolumeLabel",
+     "prop": "text"
+    },
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "volume"
+    },
+    {
+     "frame": 30,
+     "node": "VolumeLabel",
+     "prop": "text"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": "\"Volume: 80\""
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": 40.0
+    },
+    {
+     "p": 2,
+     "op": "eq",
+     "v": "\"Volume: 40\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "elevator",
+  "kind": "3d",
+  "prompt": "Make a 3D elevator. Main scene root: Node3D named Main with a floor, camera and light. A child AnimatableBody3D named Platform (box mesh + collision) starts at y=0 and moves up to y=5 over 2 s, then back down over 2 s, looping forever (use a looping Tween).",
+  "check": {
+   "frames": 130,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 3,
+     "node": "Platform",
+     "prop": "position"
+    },
+    {
+     "frame": 60,
+     "node": "Platform",
+     "prop": "position"
+    },
+    {
+     "frame": 125,
+     "node": "Platform",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "inc",
+     "axis": "y"
+    },
+    {
+     "p": 1,
+     "op": "le_y",
+     "v": 5.01
+    },
+    {
+     "a": 1,
+     "b": 2,
+     "op": "inc",
+     "axis": "y"
+    }
+   ]
+  }
+ },
+ {
+  "id": "raycast3d",
+  "kind": "3d",
+  "prompt": "Make a 3D raycast probe. Main scene root: Node3D named Main whose script has `var hit_name: String = \"\"`. A child StaticBody3D named Target (box mesh + BoxShape3D) sits at the origin. A child RayCast3D named Ray at (0, 5, 0) points straight down 10 m; every physics frame Main sets hit_name to the name of the collider or \"\" when nothing is hit. Add a camera and light.",
+  "check": {
+   "frames": 40,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "hit_name"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": "\"Target\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "pickup3d",
+  "kind": "3d",
+  "prompt": "Make a 3D health pickup. Main scene root: Node3D named Main. A child CharacterBody3D named Player (capsule mesh + collision, in group \"player\") has `var health: int = 50` and moves along +X at 3 m/s by itself without gravity, starting at the origin. A child Area3D named Pickup (sphere shape + mesh) sits at (3, 0, 0); when a body in group \"player\" enters it, that body's health increases by 25 and the pickup frees itself. Add a camera and light.",
+  "check": {
+   "frames": 120,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 5,
+     "node": "Player",
+     "prop": "health"
+    },
+    {
+     "frame": 110,
+     "node": "Player",
+     "prop": "health"
+    },
+    {
+     "frame": 110,
+     "node": ".",
+     "prop": "get_node_or_null(\"Pickup\") == null"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 50
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": 75
+    },
+    {
+     "p": 2,
+     "op": "eq",
+     "v": true
+    }
+   ]
+  }
+ },
+ {
+  "id": "turret_aim",
+  "kind": "3d",
+  "prompt": "Make a 3D aiming turret. Main scene root: Node3D named Main. A child Node3D named Target (small sphere mesh) moves along X as x = 5 * sin(time), z = -8. A child Node3D named Turret at the origin (box body + barrel along -Z) turns to face Target every frame with look_at. Add a camera and light.",
+  "check": {
+   "frames": 100,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 10,
+     "node": "Turret",
+     "prop": "rotation"
+    },
+    {
+     "frame": 90,
+     "node": "Turret",
+     "prop": "rotation"
+    },
+    {
+     "frame": 90,
+     "node": "Target",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "ne"
+    },
+    {
+     "p": 2,
+     "op": "le_z",
+     "v": -7.9
+    }
+   ]
+  }
+ },
+ {
+  "id": "terrain",
+  "kind": "3d",
+  "prompt": "Make a procedural 3D terrain. Main scene root: Node3D named Main whose script has `var vertex_count: int`. In _ready it builds a 32x32-quad height-field mesh with SurfaceTool (heights from FastNoiseLite, normals generated) and assigns it to a child MeshInstance3D named Terrain; vertex_count is the number of vertices added. Add a camera and a DirectionalLight3D.",
+  "check": {
+   "frames": 30,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 10,
+     "node": ".",
+     "prop": "vertex_count"
+    },
+    {
+     "frame": 10,
+     "node": "Terrain",
+     "prop": "mesh != null"
+    },
+    {
+     "frame": 10,
+     "node": "Terrain",
+     "prop": "mesh.get_surface_count()"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "ge",
+     "v": 1024
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": true
+    },
+    {
+     "p": 2,
+     "op": "eq",
+     "v": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "forest",
+  "kind": "3d",
+  "prompt": "Make a 3D forest with instancing. Main scene root: Node3D named Main with a ground plane, camera and light. A child MultiMeshInstance3D named Trees draws 200 instances of a CylinderMesh (or ConeMesh) placed at random positions inside a 50x50 area, built in code in _ready.",
+  "check": {
+   "frames": 30,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 10,
+     "node": "Trees",
+     "prop": "multimesh.instance_count"
+    },
+    {
+     "frame": 10,
+     "node": "Trees",
+     "prop": "multimesh.mesh != null"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 200
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": true
+    }
+   ]
+  }
+ },
+ {
+  "id": "path_cart",
+  "kind": "3d",
+  "prompt": "Make a 3D rail cart. Main scene root: Node3D named Main. A child Path3D named Track gets a Curve3D built in code: a closed square loop with corners (0,0,0), (10,0,0), (10,0,10), (0,0,10). A PathFollow3D named Cart (child of Track, with a box mesh) advances its progress at 4 m/s and loops. Add a camera and light.",
+  "check": {
+   "frames": 100,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 5,
+     "node": "Track/Cart",
+     "prop": "progress"
+    },
+    {
+     "frame": 90,
+     "node": "Track/Cart",
+     "prop": "progress"
+    },
+    {
+     "frame": 5,
+     "node": "Track",
+     "prop": "curve.get_baked_length()"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "inc",
+     "axis": null
+    },
+    {
+     "p": 2,
+     "op": "ge",
+     "v": 29.5
+    }
+   ]
+  }
+ },
+ {
+  "id": "key_door",
+  "kind": "3d",
+  "prompt": "Make a 3D key-and-door puzzle. Main scene root: Node3D named Main whose script has `var has_key: bool = false`, `var failed_attempts: int = 0` and `func pick_key() -> void`. A child Node3D named Door (box mesh) has `var opened: bool = false` and `func try_open() -> bool`: it asks Main whether the key was picked up; without it, failed_attempts increases and it returns false; with it, the door opens (rises 3 m) and returns true. Add floor, camera and light.",
+  "check": {
+   "frames": 60,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": "Door",
+     "method": "try_open",
+     "args": []
+    },
+    {
+     "frame": 11,
+     "node": ".",
+     "method": "pick_key",
+     "args": []
+    },
+    {
+     "frame": 12,
+     "node": "Door",
+     "method": "try_open",
+     "args": []
+    }
+   ],
+   "probes": [
+    {
+     "frame": 50,
+     "node": "Door",
+     "prop": "opened"
+    },
+    {
+     "frame": 50,
+     "node": ".",
+     "prop": "failed_attempts"
+    },
+    {
+     "frame": 50,
+     "node": ".",
+     "prop": "has_key"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": true
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": 1
+    },
+    {
+     "p": 2,
+     "op": "eq",
+     "v": true
+    }
+   ]
+  }
+ },
+ {
+  "id": "crate_push",
+  "kind": "3d",
+  "prompt": "Make a 3D crate push. Main scene root: Node3D named Main with a StaticBody3D floor (large box at y=0), camera and light. A child RigidBody3D named Crate (1 m box) rests on the floor; while the push action is held a central force of 40 N along +X is applied to it. Define the input actions in project.godot ([input] section) with keyboard events: push (F).",
+  "check": {
+   "frames": 150,
+   "inputs": [
+    {
+     "frame": 40,
+     "action": "push",
+     "pressed": true
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 35,
+     "node": "Crate",
+     "prop": "position"
+    },
+    {
+     "frame": 140,
+     "node": "Crate",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "inc",
+     "axis": "x"
+    },
+    {
+     "p": 1,
+     "op": "ge_y",
+     "v": 0.0
+    }
+   ]
+  }
+ },
+ {
+  "id": "torch",
+  "kind": "3d",
+  "prompt": "Make a flickering torch. Main scene root: Node3D named Main with a floor and camera. A child OmniLight3D named Torch changes light_energy every 0.1 s to a random value between 0.5 and 1.5, smoothly interpolating between values.",
+  "check": {
+   "frames": 100,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 30,
+     "node": "Torch",
+     "prop": "light_energy"
+    },
+    {
+     "frame": 60,
+     "node": "Torch",
+     "prop": "light_energy"
+    },
+    {
+     "frame": 90,
+     "node": "Torch",
+     "prop": "light_energy"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "ne"
+    },
+    {
+     "p": 1,
+     "op": "ge",
+     "v": 0.5
+    },
+    {
+     "p": 1,
+     "op": "le",
+     "v": 1.5
+    }
+   ]
+  }
+ },
+ {
+  "id": "grid_step3d",
+  "kind": "3d",
+  "prompt": "Make 3D grid movement. Main scene root: Node3D named Main with a floor, camera and light. A child Node3D named Player (box mesh) has `var grid_pos: Vector2i = Vector2i.ZERO`; each press of a move action steps exactly one 1 m cell (x for left/right, z for up/down), tweening position over 0.2 s; presses during a step are ignored. Define the input actions in project.godot ([input] section) with keyboard events: move_left (A), move_right (D), move_up (W), move_down (S).",
+  "check": {
+   "frames": 80,
+   "inputs": [
+    {
+     "frame": 10,
+     "action": "move_right",
+     "pressed": true
+    },
+    {
+     "frame": 12,
+     "action": "move_right",
+     "pressed": false
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 60,
+     "node": "Player",
+     "prop": "grid_pos"
+    },
+    {
+     "frame": 60,
+     "node": "Player",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": "Vector2i(1, 0)"
+    },
+    {
+     "p": 1,
+     "op": "ge_x",
+     "v": 0.99
+    },
+    {
+     "p": 1,
+     "op": "le_x",
+     "v": 1.01
+    }
+   ]
+  }
+ },
+ {
+  "id": "zoom3d",
+  "kind": "3d",
+  "prompt": "Make a zoomable 3D camera. Main scene root: Node3D named Main with some boxes and a light. A child Camera3D named Camera starts with fov 75; while zoom_in is held fov decreases at 30 degrees per second, while zoom_out is held it increases at the same rate, clamped to 30..90. Define the input actions in project.godot ([input] section) with keyboard events: zoom_in (Q), zoom_out (E).",
+  "check": {
+   "frames": 100,
+   "inputs": [
+    {
+     "frame": 10,
+     "action": "zoom_in",
+     "pressed": true
+    },
+    {
+     "frame": 70,
+     "action": "zoom_in",
+     "pressed": false
+    }
+   ],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 5,
+     "node": "Camera",
+     "prop": "fov"
+    },
+    {
+     "frame": 80,
+     "node": "Camera",
+     "prop": "fov"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "ge",
+     "v": 74.9
+    },
+    {
+     "p": 1,
+     "op": "le",
+     "v": 60
+    },
+    {
+     "p": 1,
+     "op": "ge",
+     "v": 30
+    }
+   ]
+  }
+ },
+ {
+  "id": "falling_boxes",
+  "kind": "3d",
+  "prompt": "Make a 3D falling-box spawner. Main scene root: Node3D named Main whose script has `var spawned: int = 0`, with a large StaticBody3D floor at y=0, camera and light. Every 0.3 s it spawns a RigidBody3D box (mesh + collision) at a random x/z within 4 m and y=10 under a child Node3D named Boxes; boxes that fall below y=-5 free themselves.",
+  "check": {
+   "frames": 150,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 140,
+     "node": ".",
+     "prop": "spawned"
+    },
+    {
+     "frame": 140,
+     "node": "Boxes",
+     "prop": "get_child_count()"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "ge",
+     "v": 6
+    },
+    {
+     "p": 1,
+     "op": "ge",
+     "v": 6
+    }
+   ]
+  }
+ },
+ {
+  "id": "checkpoint",
+  "kind": "3d",
+  "prompt": "Make a 3D checkpoint system. Main scene root: Node3D named Main whose script has `var checkpoints: Array[Vector3] = [Vector3(0, 0, 0), Vector3(10, 0, 0), Vector3(20, 0, 5)]`, `var current: int = 0`, `func reach_checkpoint(index: int) -> void` (only ever moves current forward) and `func respawn() -> void` that puts the child Node3D named Player (capsule mesh, no physics) at the current checkpoint. Add floor, camera and light.",
+  "check": {
+   "frames": 40,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": ".",
+     "method": "reach_checkpoint",
+     "args": [
+      2
+     ]
+    },
+    {
+     "frame": 11,
+     "node": ".",
+     "method": "reach_checkpoint",
+     "args": [
+      1
+     ]
+    },
+    {
+     "frame": 12,
+     "node": ".",
+     "method": "respawn",
+     "args": []
+    }
+   ],
+   "probes": [
+    {
+     "frame": 30,
+     "node": ".",
+     "prop": "current"
+    },
+    {
+     "frame": 30,
+     "node": "Player",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 2
+    },
+    {
+     "p": 1,
+     "op": "ge_x",
+     "v": 19.99
+    },
+    {
+     "p": 1,
+     "op": "ge_z",
+     "v": 4.99
+    },
+    {
+     "p": 1,
+     "op": "le_z",
+     "v": 5.01
+    }
+   ]
+  }
+ },
+ {
+  "id": "label3d_score",
+  "kind": "3d",
+  "prompt": "Make a 3D floating score. Main scene root: Node3D named Main whose script has `var score: int = 0` and `func add_score(points: int) -> void`. A child Label3D named ScoreLabel (billboard) floats at (0, 2, 0) showing \"Score: <score>\". Add a camera and light.",
+  "check": {
+   "frames": 40,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 10,
+     "node": ".",
+     "method": "add_score",
+     "args": [
+      15
+     ]
+    }
+   ],
+   "probes": [
+    {
+     "frame": 5,
+     "node": "ScoreLabel",
+     "prop": "text"
+    },
+    {
+     "frame": 30,
+     "node": "ScoreLabel",
+     "prop": "text"
+    },
+    {
+     "frame": 30,
+     "node": "ScoreLabel",
+     "prop": "billboard"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": "\"Score: 0\""
+    },
+    {
+     "p": 1,
+     "op": "eq",
+     "v": "\"Score: 15\""
+    },
+    {
+     "p": 2,
+     "op": "ge",
+     "v": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "anim_bob",
+  "kind": "3d",
+  "prompt": "Make a code-built animation. Main scene root: Node3D named Main with a camera and light. A child MeshInstance3D named Cube (BoxMesh) bobs up and down: in _ready, build an Animation named \"bob\" (1 s, looping, track on Cube's position:y going 0 -> 1 -> 0) in an AnimationLibrary on a child AnimationPlayer named Anim, and play it.",
+  "check": {
+   "frames": 60,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 10,
+     "node": "Anim",
+     "prop": "is_playing()"
+    },
+    {
+     "frame": 2,
+     "node": "Cube",
+     "prop": "position"
+    },
+    {
+     "frame": 30,
+     "node": "Cube",
+     "prop": "position"
+    },
+    {
+     "frame": 10,
+     "node": "Anim",
+     "prop": "current_animation"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": true
+    },
+    {
+     "a": 1,
+     "b": 2,
+     "op": "inc",
+     "axis": "y"
+    },
+    {
+     "p": 3,
+     "op": "eq",
+     "v": "&\"bob\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "solar",
+  "kind": "3d",
+  "prompt": "Make a 3D solar system. Main scene root: Node3D named Main with a camera and an OmniLight3D. A child Node3D named Sun (sphere mesh) sits at the origin. A child Node3D named Planet orbits the origin in the XZ plane at radius 8, one orbit every 4 s, and a Node3D named Moon (child of Planet) orbits the planet at radius 2.",
+  "check": {
+   "frames": 100,
+   "inputs": [],
+   "calls": [],
+   "probes": [
+    {
+     "frame": 10,
+     "node": "Planet",
+     "prop": "position"
+    },
+    {
+     "frame": 70,
+     "node": "Planet",
+     "prop": "position"
+    },
+    {
+     "frame": 70,
+     "node": "Planet",
+     "prop": "position.length()"
+    },
+    {
+     "frame": 70,
+     "node": "Planet/Moon",
+     "prop": "position.length()"
+    }
+   ],
+   "expect": [
+    {
+     "a": 0,
+     "b": 1,
+     "op": "ne"
+    },
+    {
+     "p": 2,
+     "op": "ge",
+     "v": 7.9
+    },
+    {
+     "p": 2,
+     "op": "le",
+     "v": 8.1
+    },
+    {
+     "p": 3,
+     "op": "ge",
+     "v": 1.9
+    },
+    {
+     "p": 3,
+     "op": "le",
+     "v": 2.1
+    }
+   ]
+  }
+ },
+ {
+  "id": "explode",
+  "kind": "3d",
+  "prompt": "Make a 3D explosion. Main scene root: Node3D named Main with a large StaticBody3D floor at y=0, camera and light, and `func explode() -> void`. Under a child Node3D named Crates, place 8 RigidBody3D crates named Crate0..Crate7 on a circle of radius 2 around the origin at y=0.5 (Crate0 at (2, 0.5, 0), going counter-clockwise). explode() applies an impulse of 8 to each crate pointing away from the origin and slightly up.",
+  "check": {
+   "frames": 120,
+   "inputs": [],
+   "calls": [
+    {
+     "frame": 30,
+     "node": ".",
+     "method": "explode",
+     "args": []
+    }
+   ],
+   "probes": [
+    {
+     "frame": 20,
+     "node": "Crates",
+     "prop": "get_child_count()"
+    },
+    {
+     "frame": 25,
+     "node": "Crates/Crate0",
+     "prop": "position"
+    },
+    {
+     "frame": 90,
+     "node": "Crates/Crate0",
+     "prop": "position"
+    }
+   ],
+   "expect": [
+    {
+     "p": 0,
+     "op": "eq",
+     "v": 8
+    },
+    {
+     "a": 1,
+     "b": 2,
+     "op": "inc",
+     "axis": "x"
+    }
+   ]
+  }
+ }
+]

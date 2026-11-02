@@ -1,0 +1,4008 @@
+{
+ "summary": {
+  "tasks": 333,
+  "display": 10,
+  "gt_pass": 329,
+  "start_fail": 333,
+  "usable": 329,
+  "usable_headless": 319
+ },
+ "rows": [
+  {
+   "task": "task_0002",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Projectile updates quest steps correctly and UI is present for visual feedback"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Projectile must react to enemies inside _on_area_entered"
+   }
+  },
+  {
+   "task": "task_0003",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Player scene structure matches tutorial"
+   },
+   "start": {
+    "ok": false,
+    "msg": "AnimatedSprite2D missing 'left' animation"
+   }
+  },
+  {
+   "task": "task_0004",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Missile projectile scene matches tutorial structure"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Missile collision_layer must be 4"
+   }
+  },
+  {
+   "task": "task_0005",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Power HUD matches tutorial layout and assets"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ControlPanelRect must be anchored to the bottom (anchor_top & anchor_bottom = 1)"
+   }
+  },
+  {
+   "task": "task_0006",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: UnitAI debug label wiring matches tutorial requirements"
+   },
+   "start": {
+    "ok": false,
+    "msg": "BattleUnit must include an FSMDebugLabel child"
+   }
+  },
+  {
+   "task": "task_0007",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: CardPile resource behaves as expected"
+   },
+   "start": {
+    "ok": false,
+    "msg": "New CardPile should be empty"
+   }
+  },
+  {
+   "task": "task_0008",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: StatsUI scene and script are configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StatsUI scene must have a script attached"
+   }
+  },
+  {
+   "task": "task_0009",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Unsafe platform flashes colors and disables safety in sync"
+   },
+   "start": {
+    "ok": false,
+    "msg": "AnimationPlayer missing on unsafe platform"
+   }
+  },
+  {
+   "task": "task_0010",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Pickup collectible scene and script completed"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Pickup must be instanced in main scene as 'Pickup'"
+   }
+  },
+  {
+   "task": "task_0011",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Bullet scene layers, collider, sprite, and signals configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Bullet collision_layer must be 16"
+   }
+  },
+  {
+   "task": "task_0012",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Bullet script moves forward and cleans up after collisions"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Define const SPEED = 500 in bullet.gd"
+   }
+  },
+  {
+   "task": "task_0013",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: FSM foundations implemented"
+   },
+   "start": {
+    "ok": false,
+    "msg": "State must stash the actor passed to _init"
+   }
+  },
+  {
+   "task": "task_0014",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gritty environment configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Background mode must be SKY"
+   }
+  },
+  {
+   "task": "task_0015",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Fog and LUT configuration complete"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Linear fog must be enabled"
+   }
+  },
+  {
+   "task": "task_0016",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Chest marker exposes a high-priority FlashlightPoint"
+   },
+   "start": {
+    "ok": false,
+    "msg": "FlashlightPoint child not found on ChestMarkerContainer"
+   }
+  },
+  {
+   "task": "task_0017",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: All limb IK solvers configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Missing Hand_R_IK"
+   }
+  },
+  {
+   "task": "task_0018",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Weapon effects controller wired correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "RayCast3D missing under BarrelEnd"
+   }
+  },
+  {
+   "task": "task_0019",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Muzzle flash effect configured with light and particles"
+   },
+   "start": {
+    "ok": false,
+    "msg": "MuzzleFlashEffect must use generic_effect_handler.gd"
+   }
+  },
+  {
+   "task": "task_0020",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Menu prefab matches tutorial structure"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Missing LaunchMenu panel"
+   }
+  },
+  {
+   "task": "task_0021",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Level camera and menus are wired correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "LevelCamera node missing"
+   }
+  },
+  {
+   "task": "task_0022",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named SpawningPoints under Trap"
+   }
+  },
+  {
+   "task": "task_0023",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Player damage signal updates the HUD"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a CanvasLayer named HUD to host damage UI"
+   }
+  },
+  {
+   "task": "task_0024",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Interactable highlight prefab and metadata created"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ItemPickup collision layers must be set to layer 2 / mask 3"
+   }
+  },
+  {
+   "task": "task_0025",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Interaction area picks and tracks nearby items"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Project must define an 'interact' input action"
+   }
+  },
+  {
+   "task": "task_0026",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Camera shake rig matches tutorial expectations"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Export 'camera_shake_noise' missing on PlayerBody"
+   }
+  },
+  {
+   "task": "task_0027",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Weapon recoil signal wired into PlayerBody"
+   },
+   "start": {
+    "ok": false,
+    "msg": "WeaponEffects must declare on_shot_camera_impulse signal"
+   }
+  },
+  {
+   "task": "task_0028",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Flashlight priority points configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "scripts/flashlight_point.gd is missing"
+   }
+  },
+  {
+   "task": "task_0029",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED"
+   },
+   "start": {
+    "ok": false,
+    "msg": "SpawnTrigger1 must have res://scripts/TriggerVolume.gd attached."
+   }
+  },
+  {
+   "task": "task_0030",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Sunshine Clouds driver and lighting configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Camera far plane must be set to 400000"
+   }
+  },
+  {
+   "task": "task_0031",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Point light, effector, and mask configuration complete"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Main scene missing"
+   }
+  },
+  {
+   "task": "task_0032",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Smoke emitter configured with plume settings"
+   },
+   "start": {
+    "ok": false,
+    "msg": "SmokeEmitter.amount must be 32"
+   }
+  },
+  {
+   "task": "task_0033",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Arcing chunk debris and smoke configured with collision + sub emitter"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ArcingChunks lifetime must be 3 seconds"
+   }
+  },
+  {
+   "task": "task_0034",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Steering debug data recorded correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "debug dictionary missing velocity entry"
+   }
+  },
+  {
+   "task": "task_0035",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Steering gizmos are drawn with lines and circles"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Missing black velocity line"
+   }
+  },
+  {
+   "task": "task_0036",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Trait UI updates counts, thresholds, and highlights correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Setting trait_data should update TraitLabel text"
+   }
+  },
+  {
+   "task": "task_0037",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Sell portal previews gold, highlights, and sells units correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "SellPortal should track the unit currently overlapping the portal"
+   }
+  },
+  {
+   "task": "task_0038",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 800 particles"
+   }
+  },
+  {
+   "task": "task_0039",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0040",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED"
+   },
+   "start": {
+    "ok": false,
+    "msg": "DayNightCycle node missing"
+   }
+  },
+  {
+   "task": "task_0041",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Main node is missing pong.gd script"
+   }
+  },
+  {
+   "task": "task_0042",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Camera2D node missing"
+   }
+  },
+  {
+   "task": "task_0043",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Portrait balloon layout configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "HBoxContainer missing \u2014 add it to host the portrait slot"
+   }
+  },
+  {
+   "task": "task_0044",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Inventory buttons add and clear slot data"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add button must call add_item_resource"
+   }
+  },
+  {
+   "task": "task_0045",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Arms prefab wiring and exports are configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ArmsContainer node missing"
+   }
+  },
+  {
+   "task": "task_0046",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Player node not found"
+   }
+  },
+  {
+   "task": "task_0047",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Faux additive lights created correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Missing Sprite2D TorchLeft under Lights"
+   }
+  },
+  {
+   "task": "task_0048",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Draggable ornament scene configured and signaling correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Draggable scene needs a dropped signal"
+   }
+  },
+  {
+   "task": "task_0049",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Player node hierarchy matches the grid movement tutorial"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Sprite2d child to Player"
+   }
+  },
+  {
+   "task": "task_0050",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Tweened grid movement with collision gating is implemented"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Declare animation_speed on Player"
+   }
+  },
+  {
+   "task": "task_0051",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Player node and script match the tutorial requirements"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Sprite2D child missing on Player"
+   }
+  },
+  {
+   "task": "task_0052",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Player controller uses lerp-based acceleration/friction and preserves jump."
+   },
+   "start": {
+    "ok": false,
+    "msg": "Friction and acceleration must be exported float variables."
+   }
+  },
+  {
+   "task": "task_0053",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Car scene hierarchy matches tutorial setup"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Sprite2D child named Sprite2D"
+   }
+  },
+  {
+   "task": "task_0054",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Crusader AnimatedSprite2D and collider are configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Set Player.motion_mode to Floating for 8-direction movement"
+   }
+  },
+  {
+   "task": "task_0055",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Mouse-based 8-direction logic implemented"
+   },
+   "start": {
+    "ok": false,
+    "msg": "player.gd must reference get_local_mouse_position"
+   }
+  },
+  {
+   "task": "task_0056",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Ability button UI hierarchy configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "AbilityButton.texture_normal must use res://assets/icons/energy-arrow.png"
+   }
+  },
+  {
+   "task": "task_0057",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Unit scene configured with aura highlight and detection area"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Main needs at least two Unit instances for testing"
+   }
+  },
+  {
+   "task": "task_0058",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Audio demo UI lists sounds, wires buttons, and reflects AudioManager stats"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Margins should be 20 on all sides"
+   }
+  },
+  {
+   "task": "task_0059",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Minimap UI frame and markers are correctly set up"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Minimap margins must all be 5"
+   }
+  },
+  {
+   "task": "task_0060",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Minimap marker logic and zoom control implemented"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Minimap must be a script instance"
+   }
+  },
+  {
+   "task": "task_0061",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: CanvasLayer and Label configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "CanvasLayer missing on FPSPlayer"
+   }
+  },
+  {
+   "task": "task_0062",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Depth scene geometry matches tutorial setup"
+   },
+   "start": {
+    "ok": false,
+    "msg": "WorldEnvironment with procedural sky missing"
+   }
+  },
+  {
+   "task": "task_0063",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: HUD GameOver overlay correctly built"
+   },
+   "start": {
+    "ok": false,
+    "msg": "MarginContainer with HUD labels missing"
+   }
+  },
+  {
+   "task": "task_0064",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Door switch and camera transition implemented"
+   },
+   "start": {
+    "ok": false,
+    "msg": "EventController must be registered as an autoload"
+   }
+  },
+  {
+   "task": "task_0065",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: HUD status bar correctly built"
+   },
+   "start": {
+    "ok": false,
+    "msg": "MarginContainer with HUD labels missing"
+   }
+  },
+  {
+   "task": "task_0066",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Safe platform duplicates sprite and collision templates with mover support"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Platform script must exist and be marked @tool"
+   }
+  },
+  {
+   "task": "task_0067",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Missile projectile scene matches tutorial structure"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Missile collision_layer must be 4"
+   }
+  },
+  {
+   "task": "task_0068",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Bullet script moves forward and cleans up after collisions"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Crate must be destroyed after bullet hit"
+   }
+  },
+  {
+   "task": "task_0069",
+   "display": true,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Depth scene geometry matches tutorial setup"
+   },
+   "start": {
+    "ok": false,
+    "msg": "WorldEnvironment with procedural sky missing"
+   }
+  },
+  {
+   "task": "task_0070",
+   "display": true,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Depth scene geometry matches tutorial setup"
+   },
+   "start": {
+    "ok": false,
+    "msg": "WorldEnvironment with procedural sky missing"
+   }
+  },
+  {
+   "task": "task_0071",
+   "display": true,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Depth scene geometry matches tutorial setup"
+   },
+   "start": {
+    "ok": false,
+    "msg": "WorldEnvironment with procedural sky missing"
+   }
+  },
+  {
+   "task": "task_0072",
+   "display": true,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Depth scene geometry matches tutorial setup"
+   },
+   "start": {
+    "ok": false,
+    "msg": "WorldEnvironment with procedural sky missing"
+   }
+  },
+  {
+   "task": "task_0073",
+   "display": true,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Depth scene geometry matches tutorial setup"
+   },
+   "start": {
+    "ok": false,
+    "msg": "WorldEnvironment with procedural sky missing"
+   }
+  },
+  {
+   "task": "task_0074",
+   "display": true,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Depth scene geometry matches tutorial setup"
+   },
+   "start": {
+    "ok": false,
+    "msg": "WorldEnvironment with procedural sky missing"
+   }
+  },
+  {
+   "task": "task_0075",
+   "display": true,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Depth scene geometry matches tutorial setup"
+   },
+   "start": {
+    "ok": false,
+    "msg": "WorldEnvironment with procedural sky missing"
+   }
+  },
+  {
+   "task": "task_0076",
+   "display": true,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Depth scene geometry matches tutorial setup"
+   },
+   "start": {
+    "ok": false,
+    "msg": "WorldEnvironment with procedural sky missing"
+   }
+  },
+  {
+   "task": "task_0077",
+   "display": true,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Depth scene geometry matches tutorial setup"
+   },
+   "start": {
+    "ok": false,
+    "msg": "WorldEnvironment with procedural sky missing"
+   }
+  },
+  {
+   "task": "task_0078",
+   "display": true,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Depth scene geometry matches tutorial setup"
+   },
+   "start": {
+    "ok": false,
+    "msg": "WorldEnvironment with procedural sky missing"
+   }
+  },
+  {
+   "task": "task_0079",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Crusader AnimatedSprite2D and collider are configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Set Player.motion_mode to Floating for 8-direction movement"
+   }
+  },
+  {
+   "task": "task_0080",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Crusader AnimatedSprite2D and collider are configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Set Player.motion_mode to Floating for 8-direction movement"
+   }
+  },
+  {
+   "task": "task_0081",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Crusader AnimatedSprite2D and collider are configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Set Player.motion_mode to Floating for 8-direction movement"
+   }
+  },
+  {
+   "task": "task_0082",
+   "display": false,
+   "gt": {
+    "ok": false,
+    "msg": "Run animations must include the directional frames"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Set Player.motion_mode to Floating for 8-direction movement"
+   }
+  },
+  {
+   "task": "task_0083",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Crusader AnimatedSprite2D and collider are configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Player requires a CollisionShape2D child"
+   }
+  },
+  {
+   "task": "task_0084",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Crusader AnimatedSprite2D and collider are configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Missing death0 animation"
+   }
+  },
+  {
+   "task": "task_0085",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Player node not found"
+   }
+  },
+  {
+   "task": "task_0086",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Player node hierarchy matches the grid movement tutorial"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Sprite2d child to Player"
+   }
+  },
+  {
+   "task": "task_0087",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Player node hierarchy matches the grid movement tutorial"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Sprite2d child to Player"
+   }
+  },
+  {
+   "task": "task_0088",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Player node hierarchy matches the grid movement tutorial"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Sprite2d child to Player"
+   }
+  },
+  {
+   "task": "task_0089",
+   "display": false,
+   "gt": {
+    "ok": false,
+    "msg": "Label2 label missing"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Margins should be 20 on all sides"
+   }
+  },
+  {
+   "task": "task_0090",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Player node hierarchy matches the grid movement tutorial"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Sprite2d child to Player"
+   }
+  },
+  {
+   "task": "task_0091",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Upper animation did not sync to lower animation changes"
+   }
+  },
+  {
+   "task": "task_0092",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "sound_player.gd not found"
+   }
+  },
+  {
+   "task": "task_0093",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "battle_over_panel.tscn not found"
+   }
+  },
+  {
+   "task": "task_0094",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: ROM dialog, level container, and button connections are configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "scenes/rom_picker_dialog.tscn not found"
+   }
+  },
+  {
+   "task": "task_0095",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Shader code missing required parts: render_mode unshaded, skip_vertex_transform, const float curvature = 7.0, const float vignette_multiplier = 2.0, uniform sampler2D screen_texture: hint_screen_textu"
+   }
+  },
+  {
+   "task": "task_0096",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Screen quad shader setup is correct"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ScreenQuad must be a MeshInstance2D"
+   }
+  },
+  {
+   "task": "task_0097",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Distortion UV preview configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "DistortionPreview must use a ShaderMaterial"
+   }
+  },
+  {
+   "task": "task_0098",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "run animation missing"
+   }
+  },
+  {
+   "task": "task_0099",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: UI controls configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "UI self_modulate alpha must be 0.784314"
+   }
+  },
+  {
+   "task": "task_0100",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Shader missing HQX marker: diag("
+   }
+  },
+  {
+   "task": "task_0101",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Enemy navigation setup is correct"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Enemy node not found"
+   }
+  },
+  {
+   "task": "task_0102",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: TileMap layers and physics collisions configured."
+   },
+   "start": {
+    "ok": false,
+    "msg": "TileMap must have at least two layers"
+   }
+  },
+  {
+   "task": "task_0103",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Enemy is missing Navigation node"
+   }
+  },
+  {
+   "task": "task_0104",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Sprite sheet animation configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "SpriteFrames missing on AnimatedSprite2D"
+   }
+  },
+  {
+   "task": "task_0105",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Audio players configured."
+   },
+   "start": {
+    "ok": false,
+    "msg": "default_bus_layout.tres not found"
+   }
+  },
+  {
+   "task": "task_0106",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "outline_effect.gd missing 'RenderingServer.get_rendering_device()'"
+   }
+  },
+  {
+   "task": "task_0107",
+   "display": false,
+   "gt": {
+    "ok": false,
+    "msg": "Base material is missing or not a BaseMaterial3D"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Surface material is not a ShaderMaterial"
+   }
+  },
+  {
+   "task": "task_0108",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "TileSet missing tile_type custom data layer"
+   }
+  },
+  {
+   "task": "task_0109",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Player hurt/fall/grounded animations are configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Missing hurt animation"
+   }
+  },
+  {
+   "task": "task_0110",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ShaderMaterial not assigned to SphereMesh"
+   }
+  },
+  {
+   "task": "task_0111",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ShaderMaterial not assigned to SphereMesh"
+   }
+  },
+  {
+   "task": "task_0112",
+   "display": false,
+   "gt": {
+    "ok": false,
+    "msg": "Walls tiles must be on the border of the background"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Background TileMapLayer missing"
+   }
+  },
+  {
+   "task": "task_0113",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "GameArea TileMapLayer missing"
+   }
+  },
+  {
+   "task": "task_0114",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "DustParticles GPUParticles2D missing"
+   }
+  },
+  {
+   "task": "task_0115",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named SpawningPoints under Trap"
+   }
+  },
+  {
+   "task": "task_0116",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain texture should be set"
+   }
+  },
+  {
+   "task": "task_0117",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain texture should be set"
+   }
+  },
+  {
+   "task": "task_0118",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "SpawningPoints needs a Marker2D child named SpawnTop"
+   }
+  },
+  {
+   "task": "task_0119",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named SpawningPoints under Trap"
+   }
+  },
+  {
+   "task": "task_0120",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Trap node must exist as a Node2D child of Main"
+   }
+  },
+  {
+   "task": "task_0121",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Portrait balloon layout configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "HBoxContainer missing \u2014 add it to host the portrait slot"
+   }
+  },
+  {
+   "task": "task_0122",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Interactable highlight prefab and metadata created"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Highlight mesh does not have flipped faces"
+   }
+  },
+  {
+   "task": "task_0123",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: TileMap correctly configured."
+   },
+   "start": {
+    "ok": false,
+    "msg": "TileMap node must be Node2D"
+   }
+  },
+  {
+   "task": "task_0124",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "VariablePitchAudioStreamPlayer missing"
+   }
+  },
+  {
+   "task": "task_0125",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: TileMap atlas and TileSet configured."
+   },
+   "start": {
+    "ok": false,
+    "msg": "Tile (0, 0) needs a collision polygon on physics layer 0"
+   }
+  },
+  {
+   "task": "task_0126",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: UI controls configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "UI self_modulate alpha must be 0.784314"
+   }
+  },
+  {
+   "task": "task_0127",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "MusicPlayer autoload not found"
+   }
+  },
+  {
+   "task": "task_0128",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Fractal panel configured"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Panel node not found"
+   }
+  },
+  {
+   "task": "task_0129",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gritty environment configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Background mode must be SKY"
+   }
+  },
+  {
+   "task": "task_0130",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Fog and LUT configuration complete"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Linear fog must be enabled"
+   }
+  },
+  {
+   "task": "task_0131",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Minimap UI frame and markers are correctly set up"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Minimap size should be 200x200"
+   }
+  },
+  {
+   "task": "task_0132",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Minimap marker logic and zoom control implemented"
+   },
+   "start": {
+    "ok": false,
+    "msg": "PlayerMarker should start centered on Grid"
+   }
+  },
+  {
+   "task": "task_0133",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Power HUD matches tutorial layout and assets"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ControlPanelRect must be anchored to the bottom (anchor_top & anchor_bottom = 1)"
+   }
+  },
+  {
+   "task": "task_0134",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: bottom preset HUD variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ControlPanelRect should keep the Bottom Wide preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0135",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: bottom preset HUD variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ControlPanelRect should keep the Bottom Wide preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0136",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: bottom preset HUD variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StatusStrip should keep the Bottom Wide preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0137",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: bottom preset HUD variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "DashboardBar should keep the Bottom Wide preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0138",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: center preset popup variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "AlertDialog should keep the Center preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0139",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: center preset popup variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "DangerDialog should keep the Center preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0140",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: center preset popup variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "WarningDialog should keep the Center preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0141",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: top preset HUD variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "TopPanel should keep the Top Wide preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0142",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: top preset HUD variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "HeaderBar should keep the Top Wide preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0143",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: top preset HUD variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StatusHeader should keep the Top Wide preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0144",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: left preset HUD variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "LeftPanel should keep the Left Wide preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0145",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: left preset HUD variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "SideBar should keep the Left Wide preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0146",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: left preset HUD variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StatusRail should keep the Left Wide preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0147",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: right preset HUD variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "RightPanel should keep the Right Wide preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0148",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: right preset HUD variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "SidePanel should keep the Right Wide preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0149",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: right preset HUD variant is configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StatusPanel should keep the Right Wide preset growth behavior"
+   }
+  },
+  {
+   "task": "task_0150",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "battle_over_panel.tscn not found"
+   }
+  },
+  {
+   "task": "task_0151",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ContinueButton size_flags_horizontal must be Expand Fill"
+   }
+  },
+  {
+   "task": "task_0152",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ContinueButton size_flags_horizontal must be Fill"
+   }
+  },
+  {
+   "task": "task_0153",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ContinueButton size_flags_horizontal must be Fill"
+   }
+  },
+  {
+   "task": "task_0154",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ContinueButton size_flags_horizontal must be Fill"
+   }
+  },
+  {
+   "task": "task_0155",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ContinueButton size_flags_horizontal must be Expand"
+   }
+  },
+  {
+   "task": "task_0156",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ContinueButton size_flags_horizontal must be Shrink Begin"
+   }
+  },
+  {
+   "task": "task_0157",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ContinueButton size_flags_horizontal must be Shrink Begin"
+   }
+  },
+  {
+   "task": "task_0158",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ContinueButton size_flags_horizontal must be Expand"
+   }
+  },
+  {
+   "task": "task_0159",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ContinueButton size_flags_horizontal must be Expand"
+   }
+  },
+  {
+   "task": "task_0160",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ContinueButton size_flags_horizontal must be Expand Fill"
+   }
+  },
+  {
+   "task": "task_0161",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ContinueButton size_flags_horizontal must be Expand Fill"
+   }
+  },
+  {
+   "task": "task_0162",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ContinueButton size_flags_horizontal must be Shrink Begin"
+   }
+  },
+  {
+   "task": "task_0163",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "ContinueButton size_flags_horizontal must be Shrink Begin"
+   }
+  },
+  {
+   "task": "task_0164",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: fighter jump action and animations are implemented"
+   },
+   "start": {
+    "ok": false,
+    "msg": "takeoff animation must use the expected frame from the 7th row"
+   }
+  },
+  {
+   "task": "task_0165",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: fighter jumpkick action and animation are implemented"
+   },
+   "start": {
+    "ok": false,
+    "msg": "jumpkick animation must use the expected frame from the 7th row"
+   }
+  },
+  {
+   "task": "task_0166",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: fighter kick action and animation are implemented"
+   },
+   "start": {
+    "ok": false,
+    "msg": "kick animation must use all valid frames from the 5th row"
+   }
+  },
+  {
+   "task": "task_0167",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: fighter jab action and animation are implemented"
+   },
+   "start": {
+    "ok": false,
+    "msg": "jab animation must use the first 3 valid frames from the 4th row"
+   }
+  },
+  {
+   "task": "task_0168",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: enemy death logic and animation are implemented"
+   },
+   "start": {
+    "ok": false,
+    "msg": "dead animation must use the first 3 valid frames from the 6th row"
+   }
+  },
+  {
+   "task": "task_0169",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: enemy sprite and animation frames are updated"
+   },
+   "start": {
+    "ok": false,
+    "msg": "BasicEnemy must use res://assets/art/characters/enemy_boss.png as its sprite"
+   }
+  },
+  {
+   "task": "task_0170",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: fighter strike action and animation are implemented"
+   },
+   "start": {
+    "ok": false,
+    "msg": "strike animation must use all valid frames from the 6th row"
+   }
+  },
+  {
+   "task": "task_0171",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: fighter punch action and animation are implemented"
+   },
+   "start": {
+    "ok": false,
+    "msg": "punch animation must use the first 3 valid frames from the 3rd row"
+   }
+  },
+  {
+   "task": "task_0172",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: water custom data layer is configured correctly."
+   },
+   "start": {
+    "ok": false,
+    "msg": "TileSet must define a custom data layer"
+   }
+  },
+  {
+   "task": "task_0173",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: pipe custom data layer is configured correctly."
+   },
+   "start": {
+    "ok": false,
+    "msg": "TileSet must define a custom data layer"
+   }
+  },
+  {
+   "task": "task_0174",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Leaves terrain is configured correctly."
+   },
+   "start": {
+    "ok": false,
+    "msg": "Terrain set 0 must contain at least 2 terrains"
+   }
+  },
+  {
+   "task": "task_0175",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: number custom data layer is configured correctly."
+   },
+   "start": {
+    "ok": false,
+    "msg": "TileSet must define a custom data layer"
+   }
+  },
+  {
+   "task": "task_0176",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: terrain collision polygons are configured correctly."
+   },
+   "start": {
+    "ok": false,
+    "msg": "Physics layer 0 collision mask must be 2"
+   }
+  },
+  {
+   "task": "task_0177",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: terrains are configured correctly."
+   },
+   "start": {
+    "ok": false,
+    "msg": "TileSet must define a terrain set"
+   }
+  },
+  {
+   "task": "task_0178",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: plant custom data layer is configured correctly."
+   },
+   "start": {
+    "ok": false,
+    "msg": "TileSet must define at least 2 custom data layers"
+   }
+  },
+  {
+   "task": "task_0179",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: cloud one-way collision is configured correctly."
+   },
+   "start": {
+    "ok": false,
+    "msg": "Cloud tile (13, 7) must use the standard full-tile collision polygon"
+   }
+  },
+  {
+   "task": "task_0180",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: waterfall z-index and modulation are configured correctly."
+   },
+   "start": {
+    "ok": false,
+    "msg": "Waterfall tile (14, 1) must have a z-index larger than the player"
+   }
+  },
+  {
+   "task": "task_0181",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: tile shape and tile size are configured correctly for the diagonal tileset."
+   },
+   "start": {
+    "ok": false,
+    "msg": "TileSet must use a valid tile shape and tile size combination for the diagonal tileset"
+   }
+  },
+  {
+   "task": "task_0182",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: cracked tile probabilities are configured correctly."
+   },
+   "start": {
+    "ok": false,
+    "msg": "Tile (0, 3) must have probability 0.25"
+   }
+  },
+  {
+   "task": "task_0183",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: navigation polygons are configured correctly for the isometric ground tiles."
+   },
+   "start": {
+    "ok": false,
+    "msg": "TileSet must define a navigation layer"
+   }
+  },
+  {
+   "task": "task_0184",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: basic enemies, hurt state, and knockback are implemented"
+   },
+   "start": {
+    "ok": false,
+    "msg": "basic_enemy.tscn must exist"
+   }
+  },
+  {
+   "task": "task_0185",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Path terrain is configured correctly."
+   },
+   "start": {
+    "ok": false,
+    "msg": "TileSet must define a terrain set"
+   }
+  },
+  {
+   "task": "task_0186",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: only the path tiles are walkable."
+   },
+   "start": {
+    "ok": false,
+    "msg": "Non-path tile (3, 3) must not be walkable"
+   }
+  },
+  {
+   "task": "task_0187",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gritty environment configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Background mode must be SKY"
+   }
+  },
+  {
+   "task": "task_0188",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gritty environment configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Background mode must be SKY"
+   }
+  },
+  {
+   "task": "task_0189",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: sign custom data layers are configured correctly."
+   },
+   "start": {
+    "ok": false,
+    "msg": "TileSet must define at least 2 custom data layers"
+   }
+  },
+  {
+   "task": "task_0190",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: collision polygons are configured correctly for the newly solid tiles."
+   },
+   "start": {
+    "ok": false,
+    "msg": "Solid tile (16, 0) must use the standard full-tile collision polygon"
+   }
+  },
+  {
+   "task": "task_0191",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gritty environment configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Background mode must be SKY"
+   }
+  },
+  {
+   "task": "task_0192",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "DustParticles GPUParticles2D missing"
+   }
+  },
+  {
+   "task": "task_0193",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "DustParticles GPUParticles2D missing"
+   }
+  },
+  {
+   "task": "task_0194",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "DustParticles GPUParticles2D missing"
+   }
+  },
+  {
+   "task": "task_0195",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "DustParticles GPUParticles2D missing"
+   }
+  },
+  {
+   "task": "task_0196",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "DustParticles GPUParticles2D missing"
+   }
+  },
+  {
+   "task": "task_0197",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "DustParticles GPUParticles2D missing"
+   }
+  },
+  {
+   "task": "task_0198",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "DustParticles GPUParticles2D missing"
+   }
+  },
+  {
+   "task": "task_0199",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Task completed successfully"
+   },
+   "start": {
+    "ok": false,
+    "msg": "DustParticles GPUParticles2D missing"
+   }
+  },
+  {
+   "task": "task_0200",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named SpawningPoints under Trap"
+   }
+  },
+  {
+   "task": "task_0201",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Trap must be centered at Vector2(320, 180)"
+   }
+  },
+  {
+   "task": "task_0202",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named SpawningPoints under Trap"
+   }
+  },
+  {
+   "task": "task_0203",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named SpawningPoints under Trap"
+   }
+  },
+  {
+   "task": "task_0204",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named SpawningPoints under Trap"
+   }
+  },
+  {
+   "task": "task_0205",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named SpawningPoints under Trap"
+   }
+  },
+  {
+   "task": "task_0206",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named SpawningPoints under Trap"
+   }
+  },
+  {
+   "task": "task_0207",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named SpawningPoints under Trap"
+   }
+  },
+  {
+   "task": "task_0208",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named SpawningPoints under Trap"
+   }
+  },
+  {
+   "task": "task_0209",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named SpawningPoints under Trap"
+   }
+  },
+  {
+   "task": "task_0210",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named SpawningPoints under Trap"
+   }
+  },
+  {
+   "task": "task_0211",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Sprite2D must be rotated back to 0"
+   }
+  },
+  {
+   "task": "task_0212",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Sprite2D must be rotated back to 0"
+   }
+  },
+  {
+   "task": "task_0213",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Sprite2D must be rotated back to 0"
+   }
+  },
+  {
+   "task": "task_0214",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Sprite2D must be rotated back to 0"
+   }
+  },
+  {
+   "task": "task_0215",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Spawning markers configured for the trap"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Sprite2D must be rotated back to 0"
+   }
+  },
+  {
+   "task": "task_0216",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Coin highlight overlays configured for the platformer image"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named CoinHighlights under Level"
+   }
+  },
+  {
+   "task": "task_0217",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Coin highlight overlays configured for the platformer image"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named CoinHighlights under Level"
+   }
+  },
+  {
+   "task": "task_0218",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Coin highlight overlays configured for the platformer image"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named CoinHighlights under Level"
+   }
+  },
+  {
+   "task": "task_0219",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Coin highlight overlays configured for the platformer image"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named CoinHighlights under Level"
+   }
+  },
+  {
+   "task": "task_0220",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Coin highlight overlays configured for the platformer image"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named CoinHighlights under Level"
+   }
+  },
+  {
+   "task": "task_0221",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Coin highlight overlays configured for the platformer image"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named CoinHighlights under Level"
+   }
+  },
+  {
+   "task": "task_0222",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Coin highlight overlays configured for the platformer image"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named CoinHighlights under Level"
+   }
+  },
+  {
+   "task": "task_0223",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Coin highlight overlays configured for the platformer image"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named CoinHighlights under Level"
+   }
+  },
+  {
+   "task": "task_0224",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Coin highlight overlays configured for the platformer image"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named CoinHighlights under Level"
+   }
+  },
+  {
+   "task": "task_0225",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Coin highlight overlays configured for the platformer image"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named CoinHighlights under Level"
+   }
+  },
+  {
+   "task": "task_0226",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Coin highlight overlays configured for the platformer image"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Add a Node2D named CoinHighlights under Level"
+   }
+  },
+  {
+   "task": "task_0227",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Star highlight correctly covers the star collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StarHighlights needs a Polygon2D child named StarHighlight"
+   }
+  },
+  {
+   "task": "task_0228",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Star highlight correctly covers the star collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StarHighlights needs a Polygon2D child named StarHighlight"
+   }
+  },
+  {
+   "task": "task_0229",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Star highlight correctly covers the star collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StarHighlights needs a Polygon2D child named StarHighlight"
+   }
+  },
+  {
+   "task": "task_0230",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Star highlight correctly covers the star collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StarHighlights needs a Polygon2D child named StarHighlight"
+   }
+  },
+  {
+   "task": "task_0231",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Star highlight correctly covers the star collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StarHighlights needs a Polygon2D child named StarHighlight"
+   }
+  },
+  {
+   "task": "task_0232",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Star highlight correctly covers the star collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StarHighlights needs a Polygon2D child named StarHighlight"
+   }
+  },
+  {
+   "task": "task_0233",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Star highlight correctly covers the star collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StarHighlights needs a Polygon2D child named StarHighlight"
+   }
+  },
+  {
+   "task": "task_0234",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Star highlight correctly covers the star collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StarHighlights needs a Polygon2D child named StarHighlight"
+   }
+  },
+  {
+   "task": "task_0235",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Star highlight correctly covers the star collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StarHighlights needs a Polygon2D child named StarHighlight"
+   }
+  },
+  {
+   "task": "task_0236",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Star highlight correctly covers the star collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StarHighlights needs a Polygon2D child named StarHighlight"
+   }
+  },
+  {
+   "task": "task_0237",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Star highlight correctly covers the star collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "StarHighlights needs a Polygon2D child named StarHighlight"
+   }
+  },
+  {
+   "task": "task_0238",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gemstone highlight correctly covers the gemstone collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "GemstoneHighlights needs a Polygon2D child named GemstoneHighlight"
+   }
+  },
+  {
+   "task": "task_0239",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gemstone highlight correctly covers the gemstone collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "GemstoneHighlights needs a Polygon2D child named GemstoneHighlight"
+   }
+  },
+  {
+   "task": "task_0240",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gemstone highlight correctly covers the gemstone collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "GemstoneHighlights needs a Polygon2D child named GemstoneHighlight"
+   }
+  },
+  {
+   "task": "task_0241",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gemstone highlight correctly covers the gemstone collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "GemstoneHighlights needs a Polygon2D child named GemstoneHighlight"
+   }
+  },
+  {
+   "task": "task_0242",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gemstone highlight correctly covers the gemstone collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "GemstoneHighlights needs a Polygon2D child named GemstoneHighlight"
+   }
+  },
+  {
+   "task": "task_0243",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gemstone highlight correctly covers the gemstone collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "GemstoneHighlights needs a Polygon2D child named GemstoneHighlight"
+   }
+  },
+  {
+   "task": "task_0244",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gemstone highlight correctly covers the gemstone collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "GemstoneHighlights needs a Polygon2D child named GemstoneHighlight"
+   }
+  },
+  {
+   "task": "task_0245",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gemstone highlight correctly covers the gemstone collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "GemstoneHighlights needs a Polygon2D child named GemstoneHighlight"
+   }
+  },
+  {
+   "task": "task_0246",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gemstone highlight correctly covers the gemstone collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "GemstoneHighlights needs a Polygon2D child named GemstoneHighlight"
+   }
+  },
+  {
+   "task": "task_0247",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gemstone highlight correctly covers the gemstone collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "GemstoneHighlights needs a Polygon2D child named GemstoneHighlight"
+   }
+  },
+  {
+   "task": "task_0248",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Gemstone highlight correctly covers the gemstone collectible"
+   },
+   "start": {
+    "ok": false,
+    "msg": "GemstoneHighlights needs a Polygon2D child named GemstoneHighlight"
+   }
+  },
+  {
+   "task": "task_0249",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: tilemap navigation chase restored"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Enemy must have a script attached"
+   }
+  },
+  {
+   "task": "task_0250",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: tilemap chaser goal variant a restored"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Chaser goal must resolve to the live Goal node at runtime"
+   }
+  },
+  {
+   "task": "task_0251",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: tilemap guard beacon variant b restored"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Guard beacon must resolve to the live Beacon node at runtime"
+   }
+  },
+  {
+   "task": "task_0252",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: tilemap drone focus variant c restored"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Drone focus must resolve to the live Focus node at runtime"
+   }
+  },
+  {
+   "task": "task_0253",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: tilemap hunter marker variant d restored"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Hunter marker must resolve to the live Marker node at runtime"
+   }
+  },
+  {
+   "task": "task_0254",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: tilemap seeker objective variant e restored"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Seeker objective must resolve to the live Objective node at runtime"
+   }
+  },
+  {
+   "task": "task_0255",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: tilemap bot checkpoint variant f restored"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Bot checkpoint must resolve to the live Checkpoint node at runtime"
+   }
+  },
+  {
+   "task": "task_0256",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: UI scene, game wrapper, and signal-driven HUD behavior restored"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Project main scene must be res://scenes/game.tscn"
+   }
+  },
+  {
+   "task": "task_0257",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: UI scene, game wrapper, and signal-driven HUD behavior restored"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Project main scene must be res://scenes/game.tscn"
+   }
+  },
+  {
+   "task": "task_0258",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: UI scene, game wrapper, and signal-driven HUD behavior restored"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Project main scene must be res://scenes/game.tscn"
+   }
+  },
+  {
+   "task": "task_0259",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: UI scene, game wrapper, and signal-driven HUD behavior restored"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Project main scene must be res://scenes/game.tscn"
+   }
+  },
+  {
+   "task": "task_0260",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: UI scene, game wrapper, and signal-driven HUD behavior restored"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Project main scene must be res://scenes/game.tscn"
+   }
+  },
+  {
+   "task": "task_0261",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: UI scene, game wrapper, and signal-driven HUD behavior restored"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Collecting one pickup must raise the score to 60"
+   }
+  },
+  {
+   "task": "task_0262",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: user preferences persist for sliders, input type, and action remaps"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Missing res://resources/user_preferences.gd"
+   }
+  },
+  {
+   "task": "task_0263",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Create res://custom_nodes/detect_range.gd"
+   }
+  },
+  {
+   "task": "task_0264",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Create res://custom_nodes/detect_range.gd"
+   }
+  },
+  {
+   "task": "task_0265",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Create res://custom_nodes/detect_range.gd"
+   }
+  },
+  {
+   "task": "task_0266",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Create res://custom_nodes/detect_range.gd"
+   }
+  },
+  {
+   "task": "task_0267",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Create res://custom_nodes/detect_range.gd"
+   }
+  },
+  {
+   "task": "task_0268",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Create res://custom_nodes/detect_range.gd"
+   }
+  },
+  {
+   "task": "task_0269",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Create res://custom_nodes/detect_range.gd"
+   }
+  },
+  {
+   "task": "task_0270",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Create res://custom_nodes/detect_range.gd"
+   }
+  },
+  {
+   "task": "task_0271",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Create res://custom_nodes/detect_range.gd"
+   }
+  },
+  {
+   "task": "task_0272",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Create res://custom_nodes/detect_range.gd"
+   }
+  },
+  {
+   "task": "task_0273",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Create res://custom_nodes/detect_range.gd"
+   }
+  },
+  {
+   "task": "task_0274",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "TargetFinder.has_target_in_range() must return true when an enemy is inside DetectRange"
+   }
+  },
+  {
+   "task": "task_0275",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "TargetFinder.has_target_in_range() must return true when an enemy is inside DetectRange"
+   }
+  },
+  {
+   "task": "task_0276",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Player DetectRange collision_layer must be 4 * (team + 1)"
+   }
+  },
+  {
+   "task": "task_0277",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "TargetFinder.has_target_in_range() must return true when an enemy is inside DetectRange"
+   }
+  },
+  {
+   "task": "task_0278",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "TargetFinder.has_target_in_range() must return true when an enemy is inside DetectRange"
+   }
+  },
+  {
+   "task": "task_0279",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "TargetFinder.has_target_in_range() must return true when an enemy is inside DetectRange"
+   }
+  },
+  {
+   "task": "task_0280",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: DetectRange and TargetFinder choose and track nearby enemy units"
+   },
+   "start": {
+    "ok": false,
+    "msg": "TargetFinder.has_target_in_range() must return true when an enemy is inside DetectRange"
+   }
+  },
+  {
+   "task": "task_0281",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Card dragging enters the correct states, cancels back to CardRow, and plays over PlayZone"
+   },
+   "start": {
+    "ok": false,
+    "msg": "CardStateMachine must enter CardBaseState on ready"
+   }
+  },
+  {
+   "task": "task_0282",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Card dragging enters the correct states, cancels back to Grip, and plays over CastZone"
+   },
+   "start": {
+    "ok": false,
+    "msg": "CardStateMachine must enter CardBaseState on ready"
+   }
+  },
+  {
+   "task": "task_0283",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Card dragging enters the correct states, cancels back to Rack, and plays over ResolveArea"
+   },
+   "start": {
+    "ok": false,
+    "msg": "CardStateMachine must enter CardBaseState on ready"
+   }
+  },
+  {
+   "task": "task_0284",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Card dragging enters the correct states, cancels back to hand, and plays over the drop area"
+   },
+   "start": {
+    "ok": false,
+    "msg": "CardStateMachine must enter CardBaseState on ready"
+   }
+  },
+  {
+   "task": "task_0285",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Card dragging enters the correct states, cancels back to Slots, and plays over CommitArea"
+   },
+   "start": {
+    "ok": false,
+    "msg": "CardStateMachine must enter CardBaseState on ready"
+   }
+  },
+  {
+   "task": "task_0286",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Card dragging enters the correct states, cancels back to Tray, and plays over UseZone"
+   },
+   "start": {
+    "ok": false,
+    "msg": "CardStateMachine must enter CardBaseState on ready"
+   }
+  },
+  {
+   "task": "task_0287",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Card dragging enters the correct states, cancels back to HandBar, and plays over DropSlot"
+   },
+   "start": {
+    "ok": false,
+    "msg": "CardStateMachine must enter CardBaseState on ready"
+   }
+  },
+  {
+   "task": "task_0288",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Card dragging enters the correct states, cancels back to Cards, and plays over CastArea"
+   },
+   "start": {
+    "ok": false,
+    "msg": "CardStateMachine must enter CardBaseState on ready"
+   }
+  },
+  {
+   "task": "task_0289",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Card dragging enters the correct states, cancels back to Palm, and plays over ReleaseZone"
+   },
+   "start": {
+    "ok": false,
+    "msg": "CardStateMachine must enter CardBaseState on ready"
+   }
+  },
+  {
+   "task": "task_0290",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Card dragging enters the correct states, cancels back to GripRow, and plays over SpendArea"
+   },
+   "start": {
+    "ok": false,
+    "msg": "CardStateMachine must enter CardBaseState on ready"
+   }
+  },
+  {
+   "task": "task_0291",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Card dragging enters the correct states, cancels back to MoveBar, and plays over ConfirmArea"
+   },
+   "start": {
+    "ok": false,
+    "msg": "CardStateMachine must enter CardBaseState on ready"
+   }
+  },
+  {
+   "task": "task_0292",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Card dragging reparents through DragCanvas, restores to HandTray, and plays over CommitZone"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Dragging state must reparent the card into DragCanvas"
+   }
+  },
+  {
+   "task": "task_0293",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Card dragging reparents through DragCanvas, restores to HandLane, and plays over CommitZone"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Dragging state must reparent the card into DragCanvas"
+   }
+  },
+  {
+   "task": "task_0294",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Card dragging reparents through DragStage, restores to CardTray, and plays over ConfirmArea"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Dragging state must reparent the card into DragStage"
+   }
+  },
+  {
+   "task": "task_0295",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 400 particles"
+   }
+  },
+  {
+   "task": "task_0296",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 1200 particles"
+   }
+  },
+  {
+   "task": "task_0297",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 600 particles"
+   }
+  },
+  {
+   "task": "task_0298",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 900 particles"
+   }
+  },
+  {
+   "task": "task_0299",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 500 particles"
+   }
+  },
+  {
+   "task": "task_0300",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 1500 particles"
+   }
+  },
+  {
+   "task": "task_0301",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 700 particles"
+   }
+  },
+  {
+   "task": "task_0302",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 600 particles"
+   }
+  },
+  {
+   "task": "task_0303",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 300 particles"
+   }
+  },
+  {
+   "task": "task_0304",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 1100 particles"
+   }
+  },
+  {
+   "task": "task_0305",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 550 particles"
+   }
+  },
+  {
+   "task": "task_0306",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 800 particles"
+   }
+  },
+  {
+   "task": "task_0307",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 450 particles"
+   }
+  },
+  {
+   "task": "task_0308",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 1000 particles"
+   }
+  },
+  {
+   "task": "task_0309",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 650 particles"
+   }
+  },
+  {
+   "task": "task_0310",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 750 particles"
+   }
+  },
+  {
+   "task": "task_0311",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 850 particles"
+   }
+  },
+  {
+   "task": "task_0312",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 950 particles"
+   }
+  },
+  {
+   "task": "task_0313",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 1400 particles"
+   }
+  },
+  {
+   "task": "task_0314",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Rain particles collide and spawn splash bursts"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Rain should emit at least 500 particles"
+   }
+  },
+  {
+   "task": "task_0315",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0316",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0317",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0318",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0319",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0320",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0321",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0322",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0323",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0324",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0325",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0326",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0327",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0328",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0329",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0330",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0331",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0332",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0333",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  },
+  {
+   "task": "task_0334",
+   "display": false,
+   "gt": {
+    "ok": true,
+    "msg": "VALIDATION_PASSED: Stylized smoke trails configured correctly"
+   },
+   "start": {
+    "ok": false,
+    "msg": "Campfire must contain a GPUParticles2D named SmokeStylized"
+   }
+  }
+ ]
+}

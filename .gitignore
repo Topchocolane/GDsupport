@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+eval/ckpt/
+eval/projects_*.json
+gamedevbench/ckpt/
+gamedevbench/gdb_work/
+gamedevbench/gdb_*.json
+!gamedevbench/gdb_controls.json
+gamedevbench/data/
+godot_docs/
+.DS_Store

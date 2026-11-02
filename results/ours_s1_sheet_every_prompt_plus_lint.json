@@ -1,0 +1,764 @@
+{
+ "run": "ours_s1_sheet_every_prompt_plus_lint",
+ "summary": {
+  "n": 60,
+  "runs": 48,
+  "behaves": 28,
+  "runs_2d": 26,
+  "runs_3d": 22,
+  "behaves_2d": 15,
+  "behaves_3d": 13,
+  "finished": 17,
+  "refused": 1,
+  "avg_turns": 18.0,
+  "minutes": 179.4
+ },
+ "rows": [
+  {
+   "task": "platformer",
+   "kind": "2d",
+   "runs": false,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 0,
+   "test_ok": null,
+   "failed_expect": [
+    0
+   ]
+  },
+  {
+   "task": "shooter2d",
+   "kind": "2d",
+   "runs": false,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 0,
+   "test_ok": null,
+   "failed_expect": [
+    1
+   ]
+  },
+  {
+   "task": "pong",
+   "kind": "2d",
+   "runs": true,
+   "behaves": true,
+   "finished": true,
+   "turns": 16,
+   "tests": 3,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "snake",
+   "kind": "2d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 19,
+   "tests": 7,
+   "test_ok": false,
+   "failed_expect": [
+    2
+   ]
+  },
+  {
+   "task": "breakout",
+   "kind": "2d",
+   "runs": true,
+   "behaves": true,
+   "finished": false,
+   "turns": 20,
+   "tests": 6,
+   "test_ok": false,
+   "failed_expect": []
+  },
+  {
+   "task": "clicker",
+   "kind": "2d",
+   "runs": false,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 3,
+   "test_ok": null,
+   "failed_expect": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "task": "countdown",
+   "kind": "2d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 2,
+   "test_ok": false,
+   "failed_expect": [
+    0,
+    1
+   ]
+  },
+  {
+   "task": "health",
+   "kind": "2d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 7,
+   "test_ok": null,
+   "failed_expect": [
+    1
+   ]
+  },
+  {
+   "task": "inventory",
+   "kind": "2d",
+   "runs": false,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 8,
+   "test_ok": null,
+   "failed_expect": [
+    0,
+    1
+   ]
+  },
+  {
+   "task": "patrol",
+   "kind": "2d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 3,
+   "test_ok": null,
+   "failed_expect": [
+    0,
+    1
+   ]
+  },
+  {
+   "task": "saveload",
+   "kind": "2d",
+   "runs": true,
+   "behaves": true,
+   "finished": false,
+   "turns": 20,
+   "tests": 11,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "menu",
+   "kind": "2d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 5,
+   "test_ok": false,
+   "failed_expect": [
+    1
+   ]
+  },
+  {
+   "task": "fps_move",
+   "kind": "3d",
+   "runs": false,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 0,
+   "test_ok": null,
+   "failed_expect": [
+    0,
+    1
+   ]
+  },
+  {
+   "task": "spin_cube",
+   "kind": "3d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 4,
+   "test_ok": false,
+   "failed_expect": [
+    1
+   ]
+  },
+  {
+   "task": "ball_drop",
+   "kind": "3d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 7,
+   "test_ok": false,
+   "failed_expect": [
+    2
+   ]
+  },
+  {
+   "task": "coins3d",
+   "kind": "3d",
+   "runs": false,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 0,
+   "test_ok": null,
+   "failed_expect": []
+  },
+  {
+   "task": "daynight",
+   "kind": "3d",
+   "runs": true,
+   "behaves": true,
+   "finished": false,
+   "turns": 20,
+   "tests": 4,
+   "test_ok": false,
+   "failed_expect": []
+  },
+  {
+   "task": "spawner3d",
+   "kind": "3d",
+   "runs": true,
+   "behaves": true,
+   "finished": false,
+   "turns": 20,
+   "tests": 0,
+   "test_ok": null,
+   "failed_expect": []
+  },
+  {
+   "task": "cam_follow",
+   "kind": "3d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 6,
+   "test_ok": false,
+   "failed_expect": [
+    1
+   ]
+  },
+  {
+   "task": "grid3d",
+   "kind": "3d",
+   "runs": true,
+   "behaves": true,
+   "finished": true,
+   "turns": 20,
+   "tests": 2,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "projectile3d",
+   "kind": "3d",
+   "runs": false,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 0,
+   "test_ok": null,
+   "failed_expect": [
+    0,
+    1
+   ]
+  },
+  {
+   "task": "vehicle3d",
+   "kind": "3d",
+   "runs": true,
+   "behaves": true,
+   "finished": false,
+   "turns": 20,
+   "tests": 0,
+   "test_ok": null,
+   "failed_expect": []
+  },
+  {
+   "task": "doors3d",
+   "kind": "3d",
+   "runs": false,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 0,
+   "test_ok": null,
+   "failed_expect": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "task": "waves3d",
+   "kind": "3d",
+   "runs": true,
+   "behaves": true,
+   "finished": true,
+   "turns": 16,
+   "tests": 3,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "tween_move",
+   "kind": "2d",
+   "runs": true,
+   "behaves": false,
+   "finished": true,
+   "turns": 14,
+   "tests": 3,
+   "test_ok": true,
+   "failed_expect": [
+    0
+   ]
+  },
+  {
+   "task": "timer_spawn2d",
+   "kind": "2d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 9,
+   "test_ok": true,
+   "failed_expect": [
+    0,
+    2
+   ]
+  },
+  {
+   "task": "dialogue",
+   "kind": "2d",
+   "runs": true,
+   "behaves": true,
+   "finished": true,
+   "turns": 12,
+   "tests": 2,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "stamina",
+   "kind": "2d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 3,
+   "test_ok": null,
+   "failed_expect": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "task": "turns",
+   "kind": "2d",
+   "runs": true,
+   "behaves": true,
+   "finished": false,
+   "turns": 20,
+   "tests": 5,
+   "test_ok": null,
+   "failed_expect": []
+  },
+  {
+   "task": "combo",
+   "kind": "2d",
+   "runs": true,
+   "behaves": true,
+   "finished": true,
+   "turns": 9,
+   "tests": 1,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "scroller",
+   "kind": "2d",
+   "runs": true,
+   "behaves": true,
+   "finished": false,
+   "turns": 20,
+   "tests": 7,
+   "test_ok": false,
+   "failed_expect": []
+  },
+  {
+   "task": "chaser",
+   "kind": "2d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 7,
+   "test_ok": false,
+   "failed_expect": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "task": "shop",
+   "kind": "2d",
+   "runs": true,
+   "behaves": true,
+   "finished": true,
+   "turns": 13,
+   "tests": 5,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "bullet_ring",
+   "kind": "2d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 4,
+   "test_ok": null,
+   "failed_expect": [
+    1
+   ]
+  },
+  {
+   "task": "pause",
+   "kind": "2d",
+   "runs": true,
+   "behaves": true,
+   "finished": false,
+   "turns": 20,
+   "tests": 5,
+   "test_ok": false,
+   "failed_expect": []
+  },
+  {
+   "task": "camera2d",
+   "kind": "2d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 6,
+   "test_ok": false,
+   "failed_expect": [
+    0,
+    1
+   ]
+  },
+  {
+   "task": "event_bus",
+   "kind": "2d",
+   "runs": true,
+   "behaves": true,
+   "finished": true,
+   "turns": 17,
+   "tests": 2,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "traffic_light",
+   "kind": "2d",
+   "runs": true,
+   "behaves": true,
+   "finished": true,
+   "turns": 9,
+   "tests": 1,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "resource_item",
+   "kind": "2d",
+   "runs": true,
+   "behaves": true,
+   "finished": true,
+   "turns": 12,
+   "tests": 1,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "dice",
+   "kind": "2d",
+   "runs": true,
+   "behaves": true,
+   "finished": true,
+   "turns": 11,
+   "tests": 1,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "undo",
+   "kind": "2d",
+   "runs": true,
+   "behaves": true,
+   "finished": true,
+   "turns": 11,
+   "tests": 1,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "volume_slider",
+   "kind": "2d",
+   "runs": true,
+   "behaves": true,
+   "finished": false,
+   "turns": 20,
+   "tests": 5,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "elevator",
+   "kind": "3d",
+   "runs": true,
+   "behaves": true,
+   "finished": true,
+   "turns": 17,
+   "tests": 5,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "raycast3d",
+   "kind": "3d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 4,
+   "test_ok": false,
+   "failed_expect": [
+    0
+   ]
+  },
+  {
+   "task": "pickup3d",
+   "kind": "3d",
+   "runs": false,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 0,
+   "test_ok": null,
+   "failed_expect": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "task": "turret_aim",
+   "kind": "3d",
+   "runs": true,
+   "behaves": true,
+   "finished": false,
+   "turns": 20,
+   "tests": 1,
+   "test_ok": false,
+   "failed_expect": []
+  },
+  {
+   "task": "terrain",
+   "kind": "3d",
+   "runs": true,
+   "behaves": true,
+   "finished": true,
+   "turns": 18,
+   "tests": 3,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "forest",
+   "kind": "3d",
+   "runs": false,
+   "behaves": false,
+   "finished": false,
+   "turns": 3,
+   "tests": 0,
+   "test_ok": null,
+   "failed_expect": [
+    0,
+    1
+   ]
+  },
+  {
+   "task": "path_cart",
+   "kind": "3d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 0,
+   "test_ok": null,
+   "failed_expect": [
+    0,
+    1
+   ]
+  },
+  {
+   "task": "key_door",
+   "kind": "3d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 5,
+   "test_ok": null,
+   "failed_expect": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "task": "crate_push",
+   "kind": "3d",
+   "runs": false,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 0,
+   "test_ok": null,
+   "failed_expect": [
+    0
+   ]
+  },
+  {
+   "task": "torch",
+   "kind": "3d",
+   "runs": true,
+   "behaves": false,
+   "finished": true,
+   "turns": 14,
+   "tests": 2,
+   "test_ok": true,
+   "failed_expect": [
+    0
+   ]
+  },
+  {
+   "task": "grid_step3d",
+   "kind": "3d",
+   "runs": true,
+   "behaves": true,
+   "finished": false,
+   "turns": 20,
+   "tests": 9,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "zoom3d",
+   "kind": "3d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 4,
+   "test_ok": false,
+   "failed_expect": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "task": "falling_boxes",
+   "kind": "3d",
+   "runs": true,
+   "behaves": true,
+   "finished": false,
+   "turns": 20,
+   "tests": 7,
+   "test_ok": false,
+   "failed_expect": []
+  },
+  {
+   "task": "checkpoint",
+   "kind": "3d",
+   "runs": true,
+   "behaves": true,
+   "finished": true,
+   "turns": 16,
+   "tests": 3,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "label3d_score",
+   "kind": "3d",
+   "runs": true,
+   "behaves": true,
+   "finished": true,
+   "turns": 13,
+   "tests": 3,
+   "test_ok": true,
+   "failed_expect": []
+  },
+  {
+   "task": "anim_bob",
+   "kind": "3d",
+   "runs": true,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 8,
+   "test_ok": null,
+   "failed_expect": [
+    1
+   ]
+  },
+  {
+   "task": "solar",
+   "kind": "3d",
+   "runs": true,
+   "behaves": true,
+   "finished": false,
+   "turns": 20,
+   "tests": 1,
+   "test_ok": false,
+   "failed_expect": []
+  },
+  {
+   "task": "explode",
+   "kind": "3d",
+   "runs": false,
+   "behaves": false,
+   "finished": false,
+   "turns": 20,
+   "tests": 0,
+   "test_ok": null,
+   "failed_expect": [
+    1
+   ]
+  }
+ ]
+}

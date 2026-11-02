@@ -1,0 +1,16 @@
+Top Left: layout_mode = 1; anchors_preset = 0
+Top Right: layout_mode = 1; anchors_preset = 1; anchor_left = 1.0; anchor_right = 1.0; grow_horizontal = 0
+Bottom Left: layout_mode = 1; anchors_preset = 2; anchor_top = 1.0; anchor_bottom = 1.0; grow_vertical = 0
+Bottom Right: layout_mode = 1; anchors_preset = 3; anchor_left = 1.0; anchor_top = 1.0; anchor_right = 1.0; anchor_bottom = 1.0; grow_horizontal = 0; grow_vertical = 0
+Center Left: layout_mode = 1; anchors_preset = 4; anchor_top = 0.5; anchor_bottom = 0.5; grow_vertical = 2
+Center Top: layout_mode = 1; anchors_preset = 5; anchor_left = 0.5; anchor_right = 0.5; grow_horizontal = 2
+Center Right: layout_mode = 1; anchors_preset = 6; anchor_left = 1.0; anchor_top = 0.5; anchor_right = 1.0; anchor_bottom = 0.5; grow_horizontal = 0; grow_vertical = 2
+Center Bottom: layout_mode = 1; anchors_preset = 7; anchor_left = 0.5; anchor_top = 1.0; anchor_right = 0.5; anchor_bottom = 1.0; grow_horizontal = 2; grow_vertical = 0
+Center: layout_mode = 1; anchors_preset = 8; anchor_left = 0.5; anchor_top = 0.5; anchor_right = 0.5; anchor_bottom = 0.5; grow_horizontal = 2; grow_vertical = 2
+Left Wide: layout_mode = 1; anchors_preset = 9; anchor_bottom = 1.0; grow_vertical = 2
+Top Wide: layout_mode = 1; anchors_preset = 10; anchor_right = 1.0; grow_horizontal = 2
+Right Wide: layout_mode = 1; anchors_preset = 11; anchor_left = 1.0; anchor_right = 1.0; anchor_bottom = 1.0; grow_horizontal = 0; grow_vertical = 2
+Bottom Wide: layout_mode = 1; anchors_preset = 12; anchor_top = 1.0; anchor_right = 1.0; anchor_bottom = 1.0; grow_horizontal = 2; grow_vertical = 0
+VCenter Wide: layout_mode = 1; anchors_preset = 13; anchor_left = 0.5; anchor_right = 0.5; anchor_bottom = 1.0; grow_horizontal = 2; grow_vertical = 2
+HCenter Wide: layout_mode = 1; anchors_preset = 14; anchor_top = 0.5; anchor_right = 1.0; anchor_bottom = 0.5; grow_horizontal = 2; grow_vertical = 2
+Full Rect: layout_mode = 1; anchors_preset = 15; anchor_right = 1.0; anchor_bottom = 1.0; grow_horizontal = 2; grow_vertical = 2

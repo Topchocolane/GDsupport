@@ -1,0 +1,33 @@
+
+ParticleProcessMaterial.EmissionShape: EMISSION_SHAPE_POINT=0, EMISSION_SHAPE_SPHERE=1, EMISSION_SHAPE_SPHERE_SURFACE=2, EMISSION_SHAPE_BOX=3, EMISSION_SHAPE_POINTS=4, EMISSION_SHAPE_DIRECTED_POINTS=5, EMISSION_SHAPE_RING=6, EMISSION_SHAPE_MAX=7
+ParticleProcessMaterial.SubEmitterMode: SUB_EMITTER_DISABLED=0, SUB_EMITTER_CONSTANT=1, SUB_EMITTER_AT_END=2, SUB_EMITTER_AT_COLLISION=3, SUB_EMITTER_AT_START=4, SUB_EMITTER_MAX=5
+GPUParticles2D.DrawOrder: DRAW_ORDER_INDEX=0, DRAW_ORDER_LIFETIME=1, DRAW_ORDER_REVERSE_LIFETIME=2
+GPUParticles3D.DrawOrder: DRAW_ORDER_INDEX=0, DRAW_ORDER_LIFETIME=1, DRAW_ORDER_REVERSE_LIFETIME=2, DRAW_ORDER_VIEW_DEPTH=3
+[gd_scene format=3]
+
+[sub_resource type="Curve" id="Curve_7r6b7"]
+_data = [Vector2(0, 0.5), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_8tqen"]
+curve = SubResource("Curve_7r6b7")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_8ehpn"]
+emission_shape = 3
+emission_box_extents = Vector3(100, 20, 1)
+gravity = Vector3(0, 0, 0)
+scale_max = 2.0
+scale_curve = SubResource("CurveTexture_8tqen")
+sub_emitter_mode = 3
+sub_emitter_amount_at_collision = 2
+
+[node name="Main" type="Node2D" unique_id=435728337]
+
+[node name="Drops" type="GPUParticles2D" parent="." unique_id=1562370692]
+sub_emitter = NodePath("../Impact")
+collision_base_size = 3.0
+trail_enabled = true
+process_material = SubResource("ParticleProcessMaterial_8ehpn")
+
+[node name="Impact" type="GPUParticles2D" parent="." unique_id=496520577]
+
